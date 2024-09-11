@@ -280,12 +280,17 @@
 						<div class="contact-info">
 							<div class="contact-details">
 								<h3>Get in Touch</h3>
+								<br />
 								<p>
 									Have questions or need assistance? Feel free to reach out to
 									us through the following channels:
 								</p>
+								<br />
 								<ul>
-									<li><strong>Address:</strong> Diepkloof Zone 6, Jhb, GP</li>
+									<li>
+										<strong>Address:</strong> Diepkloof Zone 6, Soweto, South
+										Africa
+									</li>
 									<li>
 										<strong>Email:</strong>
 										<a href="mailto:info@webify.org.za">info@webify.org.za</a>
@@ -298,14 +303,26 @@
 							</div>
 							<div class="contact-form">
 								<h3>Send Us a Message</h3>
-								<form action="submit-form.php" method="post">
+								<form action="submit-form.php" method="POST">
+									<!-- Honeypot -->
+									<input name="bot-field" style="display: none" />
+									<input type="text" name="_honey" style="display: none" />
+
+									<!-- Form -->
 									<div class="form-group">
 										<label for="name">Name:</label>
 										<input type="text" id="name" name="name" required />
 									</div>
 									<div class="form-group">
 										<label for="email">Email:</label>
-										<input type="email" id="email" name="email" required />
+										<input
+											type="email"
+											id="email"
+											name="email"
+											required
+											pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+											title="Please enter a valid email address."
+										/>
 									</div>
 									<div class="form-group">
 										<label for="message">Message:</label>
@@ -387,14 +404,21 @@
 			<div class="popup-content">
 				<button id="closePopup" class="close-popup">&times;</button>
 				<h2>Quick Contact</h2>
-				<form id="contactForm">
+				<form id="contactForm" action="submit-form.php" method="POST">
 					<div class="form-group">
 						<label for="name">Name:</label>
 						<input type="text" id="name" name="name" required />
 					</div>
 					<div class="form-group">
 						<label for="email">Email:</label>
-						<input type="email" id="email" name="email" required />
+						<input
+							type="email"
+							id="email"
+							name="email"
+							required
+							pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+							title="Please enter a valid email address."
+						/>
 					</div>
 					<div class="form-group">
 						<label for="message">Message:</label>
@@ -404,7 +428,6 @@
 				</form>
 			</div>
 		</div>
-
 		<script src="/main.js"></script>
 	</body>
 </html>

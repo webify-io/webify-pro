@@ -48,7 +48,7 @@ html {
 body {
 	font-family: 'Roboto', sans-serif;
 	background-color: var(--clr-background); /* Light background */
-	color: var(--clr-text-grey); /* Dark grey text */
+	color: #333; /* Dark grey text */
 	/* overflow-x: hidden; */
 	-webkit-font-smoothing: antialiased;
 	transition: background-color 0.3s, color 0.3s;
@@ -182,7 +182,7 @@ body.dark-mode .header {
 }
 
 body.dark-mode .header .cta__button {
-	background-color: #d3d3d3;
+	background-color: #c3c3c3;
 	color: #000;
 }
 body.dark-mode .header .cta__button:hover {
@@ -211,14 +211,18 @@ body.dark-mode .theme-toggle-btn .moon {
 	display: none;
 }
 
+body.dark-mode .bar {
+	background-color: #d3d3d3;
+}
+
 body.dark-mode .nav__submenu,
 body.dark-mode .mobile-nav {
-	background-color: #d3d3d3;
+	background-color: #3d3d3d;
 }
 
 body.dark-mode .nav__submenu-item a,
 body.dark-mode .mobile-nav__link {
-	color: #000;
+	color: #d3d3d3;
 }
 
 body.dark-mode .nav__submenu-item a:hover {
@@ -226,19 +230,21 @@ body.dark-mode .nav__submenu-item a:hover {
 }
 
 body.dark-mode {
-	background-color: rgba(53, 56, 57, 1); /* Grey: #353839 */
-	color: var(--clr-text-grey);
+	background-color: #2d2d2d;
+	color: #d2d2d2;
 	transition: background-color 0.3s, color 0.3s;
 }
 
 .dark-mode section:nth-of-type(even),
 .dark-mode .content section:nth-of-type(even),
 .dark-mode .title-header {
-	background-color: rgba(53, 56, 57, 1);
+	background-color: #2d2d2d;
+	color: #d2d2d2;
 }
 
 body.dark-mode h1,
 body.dark-mode h2,
+body.dark-mode h3,
 body.dark-mode footer h3,
 body.dark-mode .products-text li,
 body.dark-mode .about-text strong {
@@ -259,32 +265,28 @@ body.dark-mode .terms,
 body.dark-mode .privacy-policy,
 body.dark-mode .tech-category,
 body.dark-mode .step {
-	background-color: #999;
+	background-color: #3d3d3d;
 }
-body.dark-mode .service-card p,
-body.dark-mode .portfolio-item p,
-body.dark-mode .testimonial-item p,
-body.dark-mode .blog-content p,
+body.dark-mode p,
+body.dark-mode .contact-form label,
+body.dark-mode .form-group label,
 body.dark-mode .contact-details ul li,
 body.dark-mode .popup-content h2,
 body.dark-mode .process-step h2,
 body.dark-mode .service h2,
-body.dark-mode .service p,
-body.dark-mode .terms h2,
-body.dark-mode .terms p,
-body.dark-mode .privacy-policy h2,
-body.dark-mode .privacy-policy p,
+/* body.dark-mode .terms h2, */
+/* body.dark-mode .privacy-policy h2, */
 body.dark-mode .tech-category h2,
-body.dark-mode .tech-category p,
-body.dark-mode .step-content p {
-	color: #333;
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea {
+	color: #d5d5d5;
 }
 body.dark-mode .hero-content h1,
 body.dark-mode .hero-content p {
 	color: #fff;
 }
 body.dark-mode .tech-category ul li {
-	background-color: #d3d3d3;
+	background-color: #c3c3c3;
 }
 
 /* Header Styling */
@@ -1318,7 +1320,7 @@ body.dark-mode .tech-category ul li {
 
 .terms {
 	background-color: #ffffff; /* White background */
-	padding: 20px;
+	padding: 1.25rem;
 	border-radius: 8px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
@@ -1347,7 +1349,7 @@ body.dark-mode .tech-category ul li {
 /* Privacy Policy Main Content Styles */
 .privacy-policy {
 	background-color: #ffffff; /* White background */
-	padding: 20px;
+	padding: 1.25rem;
 	border-radius: 8px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
@@ -1566,6 +1568,30 @@ body.dark-mode .tech-category ul li {
 	margin-left: 2rem;
 	list-style: disc;
 }
+/* Social Buttons */
+.social-buttons {
+	display: flex;
+	justify-content: center; /* Center horizontally */
+	align-items: center; /* Center vertically */
+	gap: 20px; /* Add space between the social buttons */
+	margin-top: 20px;
+}
+.social-buttons a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #00a8ff;
+	color: white;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	font-size: 24px;
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+}
+.social-buttons a:hover {
+	background-color: #008cff; /* Change color on hover */
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -1756,6 +1782,11 @@ body.dark-mode .tech-category ul li {
 		padding: 0 1.25rem;
 	}
 	.tech-stack {
+		padding: 0 1.25rem;
+	}
+	.privacy-policy,
+	.terms {
+		margin: 0 1rem;
 		padding: 0 1.25rem;
 	}
 	/* .title-header {
