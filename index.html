@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- SEO - meta<tags> for serach engine optimisation -->
+		<!-- Additional Meta Tags -->
+		<meta name="robots" content="index, follow" />
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Primary Meta Tags -->
+		<meta
+			name="description"
+			content="Webify offers cutting-edge web development services to transform your business presence online. Specializing in custom websites, e-commerce solutions, and user-friendly designs."
+		/>
+		<!-- Favicon Icons - Branding in tabs and Bookmarks -->
+		<meta name="msapplication-TileColor" content="#1b1b1f" />
+		<meta name="theme-color" content="#47b1e9" />
+
+		<!-- Keywords Meta Tag -->
+		<meta
+			name="keywords"
+			content="Webify, webify, web, webify web solutions, webify solutions, web solutions, software, tech, technology, software development, mobile development, seo, search engine optimization, web development johannesburg, web development south africa, cheap websites, affordable websites, easy websites, simple websites, web development, website design, e-commerce solutions, custom web applications, user experience design, responsive web design, webify, digital transformation, business website, web development company, Website Optimization, website Consultation, API Development, Backend Development, UI/UX Design"
+		/>
+		<title>Webify - Innovative Web Development Solutions</title>
+		<!-- Favicon Icons - branding in tab  -->
+		<!-- For modern browsers -->
+		<link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
+		<!-- For IE 10 and below -->
+		<link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+		<!-- For PNG favicons -->
+		<link
+			rel="icon"
+			sizes="any"
+			type="image/png"
+			href="assets/favicon/logo-250x250.png"
+		/>
+
+		<!-- Standard favicon -->
+		<link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
+
+		<!-- For iOS - 180x180px -->
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="assets/favicon/logo-160x160.png"
+		/>
+
+		<!-- 32x32 and 16x16 pixel icons for general use -->
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="assets/favicon/logo-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="assets/favicon/logo-16x16.png"
+		/>
+		<!-- Web App Manifest -->
+		<link rel="manifest" href="assets/favicon/site.webmanifest" />
+
+		<!-- Link Swiper's CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+
+		<!-- boxicons stylesheet for icons-->
+		<link
+			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+
+		<!-- Link to external CSS -->
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+
+	<body>
+		<!-- Header Section -->
+		<header class="header">
+			<div class="container">
+				<!-- Logo -->
+				<div class="logo">
+					<img
+						src="assets/favicon/logo-160x160.png"
+						alt="Webify Company Logo"
+					/>
+
+					<div class="logoName">
+						<a href="#" class="logoName">Webify</a>
+					</div>
+				</div>
+				<!-- <div class="logo">
+					<a href="#">Webify</a>
+				</div> -->
+
+				<!-- Navigation Menu -->
+				<nav class="nav">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="#" class="nav__link">Home</a>
+						</li>
+						<li class="nav__item">
+							<a href="#about" class="nav__link">About</a>
+						</li>
+						<li class="nav__item nav__dropdown">
+							<a href="#services" class="nav__link"
+								>Services <span class="caret">&#9662;</span></a
+							>
+							<ul class="nav__submenu">
+								<li class="nav__submenu-item">
+									<a href="/services/website-development.html" class="nav__link"
+										>Website Development</a
+									>
+								</li>
+								<li class="nav__submenu-item">
+									<a
+										href="/services/custom-website-development.html"
+										class="nav__link"
+										>Custom Software Development</a
+									>
+								</li>
+								<li class="nav__submenu-item">
+									<a
+										href="/services/mobile-application-development.html"
+										class="nav__link"
+										>Android & IOS App Development</a
+									>
+								</li>
+								<li class="nav__submenu-item">
+									<a
+										href="/services/website-hosting-maintenance-services.html"
+										class="nav__link"
+										>Website Hosting & Maintenance Services</a
+									>
+								</li>
+								<li class="nav__submenu-item">
+									<a
+										href="/services/application-maintenance-and-support.html"
+										class="nav__link"
+										>Application Maintenance & Support</a
+									>
+								</li>
+							</ul>
+						</li>
+						<li class="nav__item">
+							<a href="#portfolio" class="nav__link">Portfolio</a>
+						</li>
+						<li class="nav__item">
+							<a href="#blog" class="nav__link">Blog</a>
+						</li>
+						<li class="nav__item nav__dropdown">
+							<a href="/work-process/work-process.html" class="nav__link">
+								Work Process <span class="caret">&#9662;</span>
+							</a>
+							<ul class="nav__submenu">
+								<li class="nav__submenu-item">
+									<a href="/work-process/services.html" class="nav__link"
+										>Services</a
+									>
+								</li>
+								<li class="nav__submenu-item">
+									<a href="/work-process/packages.html" class="nav__link"
+										>Packages</a
+									>
+								</li>
+								<li class="nav__submenu-item">
+									<a href="/work-process/tech-stack.html" class="nav__link"
+										>Tech Stack</a
+									>
+								</li>
+							</ul>
+						</li>
+						<li class="nav__item">
+							<a href="#contact" class="nav__link">Contact</a>
+						</li>
+					</ul>
+				</nav>
+
+				<!-- Light/Dark Button -->
+				<button id="themeToggle" class="theme-toggle-btn">
+					<span class="sun">&#9728;</span>
+					<span class="moon">&#9790;</span>
+				</button>
+
+				<!-- CTA Button -->
+				<div class="cta">
+					<a href="#contact" class="cta__button">Get a Free Quote</a>
+				</div>
+
+				<!-- Mobile Menu Toggle (Optional) -->
+				<div class="mobile-menu">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</div>
+			</div>
+		</header>
+
+		<!-- Rest of the website content -->
+
+		<!-- Hero Section -->
+		<section class="hero">
+			<div class="overlay">
+				<div class="hero-content">
+					<h1>Building Digital Experiences That Inspire</h1>
+					<p>Custom Web Development Solutions Tailored to Your Business</p>
+					<div class="cta-buttons">
+						<a href="#contact" class="cta-primary">Start Your Project</a>
+						<a href="#services" class="cta-secondary">Explore Our Services</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- About Section -->
+		<section id="about" class="about about-top-padding">
+			<div class="container">
+				<div class="about-content">
+					<div class="about-text">
+						<h2>About Us</h2>
+						<p>
+							At Webify, we are dedicated to creating exceptional digital
+							experiences. Our team of skilled professionals is committed to
+							delivering innovative web solutions that help businesses thrive in
+							the digital age. With a focus on quality, creativity, and client
+							satisfaction, we strive to exceed expectations and drive success
+							through our cutting-edge technology and personalized service.
+						</p>
+						<p>
+							We have worked with a diverse range of clients, from startups to
+							established enterprises, providing tailor-made solutions that
+							address their unique needs and goals. Our expertise spans across
+							various industries, and we pride ourselves on our ability to adapt
+							and innovate in a rapidly evolving digital landscape.
+						</p>
+						<a href="about-us.html" class="cta-btn portfolio-cta-btn">
+							See More About Us
+						</a>
+					</div>
+					<div class="about-image">
+						<img src="assets/team/team.webp" alt="Our Team" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Services Section -->
+		<section class="services" id="services">
+			<div class="container">
+				<h2>Our Expertise</h2>
+				<div class="services-cards">
+					<div class="service-card">
+						<img
+							src="assets/service/web-development-icon.jpg"
+							alt="Web Development"
+						/>
+						<h3>Web Development</h3>
+						<p>
+							Custom websites and eCommerce platforms built to meet your
+							business needs.
+						</p>
+					</div>
+					<div class="service-card">
+						<img src="assets/service/ui-ux-icon.jpg" alt="UI/UX Design" />
+						<h3>UI/UX Design</h3>
+						<p>
+							User-centric design solutions that deliver seamless and intuitive
+							experiences.
+						</p>
+					</div>
+					<div class="service-card">
+						<img
+							src="assets/service/seo-marketing-icon.jpg"
+							alt="SEO & Marketing"
+						/>
+						<h3>SEO</h3>
+						<p>
+							Boost your online presence and drive traffic with our SEO and
+							digital marketing services.
+						</p>
+					</div>
+					<div class="service-card">
+						<img
+							src="assets/service/support-icon.jpg"
+							alt="Maintenance & Support"
+						/>
+						<h3>Maintenance & Support</h3>
+						<p>
+							Ongoing support and updates to ensure your website stays ahead of
+							the curve.
+						</p>
+					</div>
+				</div>
+				<a href="work-process/services.html" class="cta-btn portfolio-cta-btn">
+					View More
+				</a>
+			</div>
+		</section>
+
+		<!-- Portfolio Section -->
+		<section class="portfolio" id="portfolio">
+			<div class="container">
+				<h2>Our Work</h2>
+				<div class="portfolio-grid">
+					<div class="portfolio-item">
+						<img
+							src="assets/portfolio/website-development.jpg"
+							alt="Project 1"
+						/>
+						<div class="portfolio-info">
+							<h3>Security Sector</h3>
+							<p>Web Development, UI/UX Design</p>
+
+							<a
+								href="https://troopssecurity.netlify.app/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="cta-btn portfolio-visit-cta-btn"
+							>
+								Visit
+							</a>
+						</div>
+					</div>
+					<div class="portfolio-item">
+						<img src="assets/portfolio/app-development.jpg" alt="Project 2" />
+						<div class="portfolio-info">
+							<h3>Beverage Sector</h3>
+							<p>eCommerce Platform</p>
+
+							<a
+								href="https://eezi-fruit.vercel.app/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="cta-btn portfolio-visit-cta-btn"
+							>
+								Visit
+							</a>
+						</div>
+					</div>
+					<div class="portfolio-item">
+						<img src="assets/portfolio/seo-optimization.jpg" alt="Project 3" />
+						<div class="portfolio-info">
+							<h3>Healthcare</h3>
+							<p>SEO Optimization</p>
+
+							<a
+								href="https://maxipharma.co.za/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="cta-btn portfolio-visit-cta-btn"
+							>
+								Visit
+							</a>
+						</div>
+					</div>
+				</div>
+				<a href="portfolio.html" class="cta-btn portfolio-cta-btn">
+					See More Projects
+				</a>
+			</div>
+		</section>
+
+		<!-- Testimonials Section -->
+		<section class="testimonials" id="testimonials">
+			<div class="container">
+				<h2>What Our Clients Say</h2>
+				<div class="testimonials-grid">
+					<div class="testimonial-item">
+						<p>
+							"Webify transformed our online presence. Their attention to detail
+							and creativity is unmatched."
+						</p>
+						<div class="client-info">
+							<img
+								src="assets/testimonials/placeholder-avatar-profile.jpg"
+								alt="Client 1"
+							/>
+							<div class="client-details">
+								<h3>Michael Radebe</h3>
+								<p>CEO, MaxiPharma</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="testimonial-item">
+						<p>
+							"Working with Webify was a game-changer. Their team delivered
+							exactly what we needed, on time and within budget."
+						</p>
+						<div class="client-info">
+							<img
+								src="assets/testimonials/placeholder-avatar-profile.jpg"
+								alt="Client 2"
+							/>
+							<div class="client-details">
+								<h3>Ava Thompson</h3>
+								<p>Marketing Director, Creative Co.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="testimonial-item">
+						<p>
+							"Their expertise in web development and design helped us launch a
+							successful product in record time."
+						</p>
+						<div class="client-info">
+							<img
+								src="assets/testimonials/placeholder-avatar-profile.jpg"
+								alt="Client 3"
+							/>
+							<div class="client-details">
+								<h3>Norman Gantsho</h3>
+								<p>Founder, Troops Security</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Technology Section -->
+		<section class="technology">
+			<div class="swiper-container">
+				<div class="swiper mySwiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="tech-img">
+								<img
+									src="assets/technology/nodejs-logo.png"
+									alt="Tech-Stack Image"
+								/>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="tech-img">
+								<img
+									src="assets/technology/react-logo.png"
+									alt="Tech-Stack Image"
+								/>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="tech-img">
+								<img
+									src="assets/technology/sass-logo.png"
+									alt="Tech-Stack Image"
+								/>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="tech-img">
+								<img
+									src="assets/technology/html5-logo.png"
+									alt="Tech-Stack Image"
+								/>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="tech-img">
+								<img
+									src="assets/technology/css3-logo.png"
+									alt="Tech-Stack Image"
+								/>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="tech-img">
+								<img
+									src="assets/technology/css-logo.png"
+									alt="Tech-Stack Image"
+								/>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="tech-img">
+								<img
+									src="assets/technology/js-logo.png"
+									alt="Tech-Stack Image"
+								/>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="tech-img">
+								<img
+									src="assets/technology/java-logo.png"
+									alt="Tech-Stack Image"
+								/>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="tech-img">
+								<img
+									src="assets/technology/c-logo.png"
+									alt="Tech-Stack Image"
+								/>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="tech-img">
+								<img
+									src="assets/technology/angular-logo.png"
+									alt="Tech-Stack Image"
+								/>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="tech-img">
+								<img
+									src="assets/technology/php-logo.png"
+									alt="Tech-Stack Image"
+								/>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="tech-img">
+								<img
+									src="assets/technology/mongodb-logo.png"
+									alt="Tech-Stack Image"
+								/>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="tech-img">
+								<img
+									src="assets/technology/wordpress-logo.png"
+									alt="Tech-Stack Image"
+								/>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="tech-img">
+								<img
+									src="assets/technology/windows-logo.png"
+									alt="Tech-Stack Image"
+								/>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="tech-img">
+								<img
+									src="assets/technology/android-logo.png"
+									alt="Tech-Stack Image"
+								/>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="tech-img">
+								<img
+									src="assets/technology/ios-logo.png"
+									alt="Tech-Stack Image"
+								/>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="tech-img">
+								<img
+									src="assets/technology/android-icon-logo.png"
+									alt="Tech-Stack Image"
+								/>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="tech-img">
+								<img
+									src="assets/technology/apple-logo.png"
+									alt="Tech-Stack Image"
+								/>
+							</div>
+						</div>
+					</div>
+
+					<!-- Swiper buttons -->
+					<!-- <div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-pagination"></div> -->
+				</div>
+			</div>
+		</section>
+
+		<!-- Blog Section -->
+		<section class="blog" id="blog">
+			<div class="container">
+				<h2>Latest Articles</h2>
+				<div class="blog-grid">
+					<div class="blog-post">
+						<img src="assets/blog/blog1-thumbnail.jpg" alt="Blog Post 1" />
+						<div class="blog-content">
+							<h3>Understanding Modern Web Development</h3>
+							<p class="date">September 15, 2024</p>
+							<p>
+								Explore the latest trends and technologies in web development
+								and how they can benefit your business.
+							</p>
+							<a href="#" class="read-more">Read More</a>
+						</div>
+					</div>
+					<div class="blog-post">
+						<img src="assets/blog/blog2-thumbnail.jpg" alt="Blog Post 2" />
+						<div class="blog-content">
+							<h3>How UI/UX Design Impacts User Experience</h3>
+							<p class="date">August 30, 2024</p>
+							<p>
+								Discover the importance of user-centric design and how it can
+								enhance user satisfaction and engagement.
+							</p>
+							<a href="#" class="read-more">Read More</a>
+						</div>
+					</div>
+					<div class="blog-post">
+						<img src="assets/blog/blog3-thumbnail.jpg" alt="Blog Post 3" />
+						<div class="blog-content">
+							<h3>Effective SEO Strategies for 2024</h3>
+							<p class="date">August 10, 2024</p>
+							<p>
+								Learn about the latest SEO techniques and best practices to
+								boost your website's visibility and ranking.
+							</p>
+							<a href="#" class="read-more">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Contact Section -->
+		<section class="contact" id="contact">
+			<div class="container">
+				<h2>Contact Us</h2>
+				<div class="contact-info">
+					<div class="contact-details">
+						<h3>Get in Touch</h3>
+						<p>
+							Have questions or need assistance? Feel free to reach out to us
+							through the following channels:
+						</p>
+						<ul>
+							<li><strong>Address:</strong> Diepkloof Zone 6, Jhb, GP</li>
+							<li>
+								<strong>Email:</strong>
+								<a href="mailto:info@webify.org.za">info@webify.org.za</a>
+							</li>
+							<li>
+								<strong>Phone:</strong>
+								<a href="tel:0645584110">+27 64 588 4110</a>
+							</li>
+						</ul>
+					</div>
+					<div class="contact-form">
+						<h3>Send Us a Message</h3>
+						<form action="submit-form.php" method="post">
+							<div class="form-group">
+								<label for="name">Name:</label>
+								<input type="text" id="name" name="name" required />
+							</div>
+							<div class="form-group">
+								<label for="email">Email:</label>
+								<input type="email" id="email" name="email" required />
+							</div>
+							<div class="form-group">
+								<label for="message">Message:</label>
+								<textarea
+									id="message"
+									name="message"
+									rows="4"
+									required
+								></textarea>
+							</div>
+							<button type="submit" class="cta-btn">Send Message</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer Section -->
+		<footer class="footer">
+			<div class="footer-container">
+				<div class="footer-content">
+					<div class="box">
+						<div class="footer-logo">
+							<h1>Webify</h1>
+							<p>Your partner in innovative web solutions</p>
+						</div>
+					</div>
+					<div class="box">
+						<div class="footer-links">
+							<h3>Quick Links</h3>
+							<ul>
+								<li><a href="#">Home</a></li>
+								<li><a href="#about">About</a></li>
+								<li><a href="#services">Services</a></li>
+								<li><a href="#portfolio">Portfolio</a></li>
+								<li><a href="#blog">Blog</a></li>
+								<li><a href="#contact">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="box">
+						<div class="footer-policy">
+							<h3>Legal</h3>
+							<ul>
+								<li><a href="privacy-policy.html">Privacy Policy</a></li>
+								<li><a href="terms-of-service.html">Terms of Service</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer-bottom">
+					<p>&copy; 2024 Webify. All rights reserved.</p>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Scroll to Top Button -->
+		<button id="scrollToTopBtn" class="scroll-to-top">
+			<i class="bx bx-up-arrow-alt"></i>
+		</button>
+
+		<!-- Quick Contact Button -->
+		<button id="quickContactBtn" class="quick-contact-btn">
+			<span>Contact Us</span>
+		</button>
+
+		<!-- WhatsApp Button -->
+		<div id="whatsAppBtn" class="whatsapp-btn">
+			<a href="https://wa.me/27645584110" target="_blank">
+				<i class="bx bxl-whatsapp"></i>
+			</a>
+		</div>
+
+		<!-- Popup Form -->
+		<div id="popupForm" class="popup-overlay">
+			<div class="popup-content">
+				<button id="closePopup" class="close-popup">&times;</button>
+				<h2>Quick Contact</h2>
+				<form id="contactForm">
+					<div class="form-group">
+						<label for="name">Name:</label>
+						<input type="text" id="name" name="name" required />
+					</div>
+					<div class="form-group">
+						<label for="email">Email:</label>
+						<input type="email" id="email" name="email" required />
+					</div>
+					<div class="form-group">
+						<label for="message">Message:</label>
+						<textarea id="message" name="message" rows="4" required></textarea>
+					</div>
+					<button type="submit" class="cta-btn">Send Message</button>
+				</form>
+			</div>
+		</div>
+
+		<!-- Swiper JS -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+		<!-- Initialize Swiper -->
+		<script>
+			var swiper = new Swiper('.mySwiper', {
+				spaceBetween: 0, // Set gap between slides to 5px
+				loop: true, // Enable infinite loop
+				slidesPerView: 5, // Automatically fit as many slides as possible in the viewport
+				centeredSlides: false, // Prevent centering for continuous sliding
+				speed: 3000, // Set speed for smooth continuous scrolling
+				autoplay: {
+					delay: 0, // No delay between transitions
+					disableOnInteraction: false, // Keep autoplay even after user interaction
+					reverseDirection: false, // Scroll in one direction
+				},
+				freeMode: true, // Allow smooth continuous scrolling
+				freeModeMomentum: false, // Disable momentum after swipe to keep continuous flow
+				allowTouchMove: false, // Disable manual swiping to maintain the continuous scroll
+				grabCursor: false, // Remove grab cursor since it's auto-scrolling
+				breakpoints: {
+					0: {
+						slidesPerView: 3,
+					},
+					450: {
+						slidesPerView: 3,
+					},
+					900: {
+						slidesPerView: 5,
+					},
+				},
+			});
+		</script>
+
+		<!-- Main JS -->
+		<script src="main.js"></script>
+
+		<!-- Optional JavaScript for Mobile Menu Toggle -->
+		<!-- <script>
+			const mobileMenu = document.querySelector('.mobile-menu');
+			const nav = document.querySelector('.nav');
+
+			mobileMenu.addEventListener('click', () => {
+				nav.classList.toggle('nav--active');
+				mobileMenu.classList.toggle('mobile-menu--active');
+			});
+		</script> -->
+	</body>
+</html>
