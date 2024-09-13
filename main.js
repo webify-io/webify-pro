@@ -164,9 +164,39 @@ document.addEventListener('DOMContentLoaded', function () {
 }); */
 
 /* Menu Toggle */
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () => {
+	const mobileMenuToggle = document.querySelector('.mobile-menu');
+	const nav = document.querySelector('.nav');
+
+	// Toggle the mobile menu visibility
+	mobileMenuToggle.addEventListener('click', () => {
+		nav.classList.toggle('open');
+		mobileMenuToggle.classList.toggle('open');
+	});
+
+	// Handle dropdown submenu behavior
+	nav.querySelectorAll('.nav__dropdown').forEach((dropdown) => {
+		const link = dropdown.querySelector('.nav__link');
+		link.addEventListener('click', (e) => {
+			e.preventDefault(); // Prevent the default link behavior
+			dropdown.classList.toggle('active');
+		});
+	});
+
+	// Close mobile menu when a link is clicked (without a dropdown)
+	nav.querySelectorAll('.nav__link').forEach((link) => {
+		link.addEventListener('click', () => {
+			if (!link.closest('.nav__dropdown')) {
+				nav.classList.remove('open');
+				mobileMenuToggle.classList.remove('open');
+			}
+		});
+	});
+});
+/* document.addEventListener('DOMContentLoaded', function () {
 	const mobileMenuToggle = document.querySelector('.mobile-menu');
 	const mobileNav = document.createElement('nav');
+
 	mobileNav.classList.add('mobile-nav');
 	mobileNav.innerHTML = document.querySelector('.nav').innerHTML;
 	document.body.appendChild(mobileNav);
@@ -179,13 +209,6 @@ document.addEventListener('DOMContentLoaded', function () {
 		const link = item.querySelector('.nav__link');
 		link.classList.add('mobile-nav__link');
 	});
-
-	// Append CTA button at the bottom of the mobile navigation
-	const ctaButton = document.querySelector('.cta__button').cloneNode(true);
-	const ctaContainer = document.createElement('div');
-	ctaContainer.classList.add('mobile-nav__cta');
-	ctaContainer.appendChild(ctaButton);
-	mobileNav.appendChild(ctaContainer); // Add CTA button to the mobile nav
 
 	// Toggle the mobile menu
 	mobileMenuToggle.addEventListener('click', function () {
@@ -225,7 +248,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			}
 		});
 	});
-});
+}); */
 
 /* JavaScript Email Validation (Optional) */
 document
