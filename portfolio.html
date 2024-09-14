@@ -60,6 +60,12 @@
 		<!-- Web App Manifest -->
 		<link rel="manifest" href="assets/favicon/site.webmanifest" />
 
+		<!-- Link Swiper's CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+
 		<!-- boxicons stylesheet for icons-->
 		<link
 			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -210,49 +216,59 @@
 						<!-- Category 1 -->
 						<div class="portfolio-category">
 							<h2>Web Development</h2>
-							<div class="slider">
-								<div class="slider-wrapper">
-									<div class="slide">
+							<div class="swiper mySwiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
 										<img src="assets/home/37731495.jpg" alt="Project 1" />
 										<p>Project 1</p>
 									</div>
-									<div class="slide">
+									<div class="swiper-slide">
 										<img src="assets/home/coding.webp" alt="Project 2" />
 										<p>Project 2 Description</p>
 									</div>
-									<div class="slide">
+									<div class="swiper-slide">
 										<img src="assets/home/home.webp" alt="Project 3" />
 										<p>Project 3 Description</p>
 									</div>
 								</div>
-								<button class="slider-btn prev">&lt;</button>
-								<button class="slider-btn next">&gt;</button>
+								<!-- Swiper buttons -->
+								<div class="swiper-button-next"></div>
+								<div class="swiper-button-prev"></div>
+								<div class="swiper-pagination"></div>
 							</div>
 						</div>
 
 						<!-- Category 2 -->
 						<div class="portfolio-category">
 							<h2>Mobile Apps</h2>
-							<div class="slider">
-								<div class="slider-wrapper">
-									<div class="slide">
+							<div class="swiper mySwiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
 										<img
 											src="assets/services/appdev_step2.jpg"
 											alt="Mobile App 1"
 										/>
 										<p>Mobile App</p>
 									</div>
-									<div class="slide">
-										<img src="mobile2.jpg" alt="Mobile App 2" />
+									<div class="swiper-slide">
+										<img
+											src="assets/blog/blog1-thumbnail.jpg"
+											alt="Mobile App 2"
+										/>
 										<p>Mobile App 2 Description</p>
 									</div>
-									<div class="slide">
-										<img src="mobile3.jpg" alt="Mobile App 3" />
+									<div class="swiper-slide">
+										<img
+											src="assets/blog/blog3-thumbnail.jpg"
+											alt="Mobile App 3"
+										/>
 										<p>Mobile App 3 Description</p>
 									</div>
 								</div>
-								<button class="slider-btn prev">&lt;</button>
-								<button class="slider-btn next">&gt;</button>
+								<!-- Swiper buttons -->
+								<div class="swiper-button-next"></div>
+								<div class="swiper-button-prev"></div>
+								<div class="swiper-pagination"></div>
 							</div>
 						</div>
 
@@ -324,7 +340,7 @@
 			<div class="popup-content">
 				<button id="closePopup" class="close-popup">&times;</button>
 				<h2>Quick Contact</h2>
-				<form id="contactForm" action="submit-form.php" method="POST">
+				<form id="contactForm" action="/submit-form.php" method="POST">
 					<div class="form-group">
 						<label for="name">Name:</label>
 						<input type="text" id="name" name="name" required />
@@ -348,6 +364,45 @@
 				</form>
 			</div>
 		</div>
+
+		<!-- Swiper JS -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+		<!-- Initialize Swiper -->
+		<script>
+			var swiper = new Swiper('.mySwiper', {
+				spaceBetween: 30,
+				/* centeredSlides: true, */
+				loop: true,
+				slidesPerView: 3,
+
+				autoplay: {
+					delay: 5000,
+					disableOnInteraction: false,
+				},
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				},
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+				breakpoints: {
+					0: {
+						slidesPerView: 1,
+					},
+					450: {
+						slidesPerView: 2,
+					},
+					900: {
+						slidesPerView: 3,
+					},
+				},
+				// Dynamically set slidesPerView based on window width
+				//slidesPerView: window.innerWidth < 700 ? 2 : 'auto',
+			});
+		</script>
 
 		<script src="/main.js"></script>
 	</body>

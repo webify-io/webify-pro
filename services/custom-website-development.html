@@ -22,7 +22,7 @@
 		/>
 		<title>Custom Website Development - Webify</title>
 		<!-- Favicon Icons - branding in tab  -->
-		<!-- For modern browsers -->
+		<!-- Standard favicon: For modern browsers -->
 		<link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico" />
 		<!-- For IE 10 and below -->
 		<link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
@@ -33,9 +33,6 @@
 			type="image/png"
 			href="/assets/favicon/logo-250x250.png"
 		/>
-
-		<!-- Standard favicon -->
-		<link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico" />
 
 		<!-- For iOS - 180x180px -->
 		<link
@@ -545,7 +542,7 @@
 							</div>
 							<div class="contact-form">
 								<h3>Send Us a Message</h3>
-								<form action="submit-form.php" method="POST">
+								<form action="/submit-form.php" method="POST">
 									<!-- Honeypot -->
 									<input name="bot-field" style="display: none" />
 									<input type="text" name="_honey" style="display: none" />
@@ -646,7 +643,7 @@
 			<div class="popup-content">
 				<button id="closePopup" class="close-popup">&times;</button>
 				<h2>Quick Contact</h2>
-				<form id="contactForm" action="submit-form.php" method="POST">
+				<form id="contactForm" action="/submit-form.php" method="POST">
 					<div class="form-group">
 						<label for="name">Name:</label>
 						<input type="text" id="name" name="name" required />
