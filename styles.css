@@ -152,7 +152,7 @@ section:nth-of-type(even) {
 	align-items: center;
 	gap: 10px;
 	color: #333; /* Dark text */
-	margin-right: 2rem;
+	/* margin-right: 2rem; */
 	user-select: none;
 }
 
@@ -1713,7 +1713,7 @@ body.dark-mode .tech-category ul li {
 
 	.theme-toggle-btn {
 		display: flex;
-		margin-left: 7em;
+		margin-left: 5em;
 		/* font-size: 1.8em; */
 	}
 
