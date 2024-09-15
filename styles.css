@@ -9,7 +9,8 @@
 
 	--first-color: rgba(0, 168, 255, 1); /* Blue: #00a8ff */
 
-	--clr-background: rgba(249, 250, 251, 1); /* Light grey background: #f9fafb */
+	/* --clr-background: rgba(249, 250, 251, 1); */ /* Light grey background: #f9fafb */
+	--clr-background: #f8f8ff; /* Ghost White: #F8F8FF */
 	--clr-background-alt: rgba(248, 255, 250, 1); /* White: #fff */
 	--clr-background-alt-2: rgba(
 		241,
@@ -109,7 +110,7 @@ section {
 	/* padding: 5rem 5% 2rem; */
 }
 section:nth-of-type(even) {
-	background-color: var(--clr-background-alt);
+	background-color: #f8f8ff;
 }
 /* Container to center content */
 .container {
@@ -300,7 +301,7 @@ body.dark-mode .main .about h2 {
 
 /* Header Styling */
 .header {
-	background-color: var(--clr-background-alt);
+	background-color: #f8f8ff;
 	position: fixed;
 	width: 100%;
 	top: 0;
@@ -582,7 +583,7 @@ body.dark-mode .main .about h2 {
 
 .service-card {
 	/* background-color: #f1f1f1; */ /* Light grey background for cards */
-	background-color: var(--clr-background);
+	background-color: #ffffff; /* Snow: #FFFAFA */
 	padding: 30px;
 	border-radius: 10px;
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
@@ -632,7 +633,7 @@ body.dark-mode .main .about h2 {
 
 .portfolio-item {
 	/* background-color: #fff; */ /* White background */
-	background-color: var(--clr-background-alt);
+	background-color: #fff;
 	border-radius: 10px;
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
 	overflow: hidden;
@@ -698,7 +699,7 @@ body.dark-mode .main .about h2 {
 }
 
 .testimonial-item {
-	background-color: var(--clr-background-alt); /* White background */
+	background-color: #fff; /* White background */
 	border-radius: 10px;
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
 	padding: 30px;
@@ -748,7 +749,7 @@ body.dark-mode .main .about h2 {
 	min-height: unset;
 	margin: 2rem 0;
 }
-/* Swiper Container */
+/* Swiper Container - Technology */
 /* Set a specific height for the swiper-container */
 .swiper-container {
 	height: auto;
@@ -811,7 +812,7 @@ body.dark-mode .main .about h2 {
 }
 
 .blog-post {
-	background-color: var(--clr-background-alt); /* White background */
+	background-color: #fff; /* White background */
 	border-radius: 10px;
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
 	overflow: hidden;
@@ -890,7 +891,7 @@ body.dark-mode .main .about h2 {
 
 .contact-details,
 .contact-form {
-	background-color: var(--clr-background-alt); /* White background */
+	background-color: #fff; /* White background */
 	border-radius: 10px;
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
 	padding: 30px;
@@ -1219,12 +1220,13 @@ body.dark-mode .main .about h2 {
 	text-align: left;
 }
 
-.content section:nth-of-type(even) {
+/* .content section:nth-of-type(even) {
 	background-color: var(--clr-background-alt);
-}
+} */
 
 .title-header {
-	background-color: #f4f4f4; /* Light grey background */
+	/* background-color: #f4f4f4;  */ /* Light grey background */
+	background-color: rgba(0, 0, 0, 0.05); /* White Smoek: #F5F5F5 */
 	padding: 5rem 1.25rem 0;
 	border-bottom: 1px solid #ddd; /* Light border */
 }
@@ -1442,10 +1444,11 @@ body.dark-mode .main .about h2 {
     display: none;
 } */
 
-.portfolio {
+.portfolio-page {
 	display: flex;
 	flex-direction: column;
 	gap: 40px;
+	text-align: center;
 }
 
 .portfolio-category {
@@ -1461,34 +1464,48 @@ body.dark-mode .main .about h2 {
 	color: #00a8ff; /* Blue color */
 }
 
-.slider {
+/* Swiper Container - Portfolio */
+/* .slider {
 	position: relative;
 	overflow: hidden;
-}
+} */
 
-.slider-wrapper {
+.swiper-wrapper-portfolio {
 	display: flex;
 	transition: transform 0.5s ease-in-out;
 }
 
-.slide {
+.swiper-slide-portfolio {
 	display: flex;
 	justify-content: center; /* Horizontally centers the image */
 	align-items: center; /* Vertically centers the image */
 	min-width: 100%;
 	box-sizing: border-box;
+	padding: 5rem 0;
 	flex-direction: column; /* Ensure the text is below the image */
 	text-align: center; /* Center the text as well */
 	gap: 20px;
 }
 
-.slide img {
+.swiper-slide-portfolio img {
 	width: 100%;
-	max-width: 22rem;
+	max-width: 15em;
 	border-radius: 8px;
 }
+/* Adjust the Swiper buttons if needed to fit within the 5em height */
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-pagination {
+	color: #008cff;
+	font-weight: 800;
+}
 
-.slider-btn {
+/* .swiper-pagination {
+	bottom: 0.5em;
+	text-align: center;
+} */
+
+/* .slider-btn {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
@@ -1508,7 +1525,7 @@ body.dark-mode .main .about h2 {
 
 .slider-btn.next {
 	right: 10px;
-}
+} */
 
 /* Website development Landing Section */
 /* Development Steps Section */
@@ -1829,6 +1846,58 @@ body.dark-mode .main .about h2 {
 	}
 	/* .step-content {
 		padding-left: 0;
+	} */
+
+	.swiper-slide-portfolio img {
+		width: 20em;
+		max-width: 25em;
+	}
+
+	.swiper-button-next::after,
+	.swiper-button-prev::after {
+		font-size: 1rem;
+	}
+
+	.swiper-button-next,
+	.swiper-button-prev {
+		/* margin-top: 10rem; */
+		width: 40px;
+		height: 40px;
+		background-color: #00a8ff;
+		color: #fff;
+		border: 2px solid #fff;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	/* .swiper-button-next {
+		right: 20px;
+	}
+
+	.swiper-button-prev {
+		left: 20px;
+	} */
+
+	/* 	.swiper-button-next::after,
+	.swiper-button-prev::after {
+		font-size: 1rem;
+		color: #fff;
+	}
+
+	.swiper-button-next,
+	.swiper-button-prev {
+		position: absolute;
+   		bottom: 10px;
+		background-color: #008cff;
+		color: #fff;
+		border-radius: 50%;
+		width: 2rem;
+		height: 2rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	} */
 
 	.process,

@@ -65,8 +65,15 @@ function hideLoader() {
 	const loader = document.getElementById('loader');
 	const content = document.getElementById('content');
 
-	loader.style.display = 'none';
-	content.classList.remove('hidden');
+	// Added Null Checks
+	if (loader) {
+		loader.style.display = 'none';
+	}
+	if (content) {
+		content.classList.remove('hidden');
+	}
+	/* loader.style.display = 'none';
+	content.classList.remove('hidden'); */
 }
 
 // Hide the loader and show the content after 1 second (simulate loading time)
@@ -75,7 +82,7 @@ window.addEventListener('load', () => {
 });
 
 // Slider functionality
-function initializeSliders() {
+/* function initializeSliders() {
 	const sliders = document.querySelectorAll('.slider');
 
 	sliders.forEach((slider) => {
@@ -101,7 +108,7 @@ function initializeSliders() {
 
 		showSlide(index); // Show the first slide
 	});
-}
+} */
 
 // JavaScript to rotate steps in the ladder
 
