@@ -221,7 +221,7 @@
 						<!-- Category 1 -->
 						<div class="portfolio-category">
 							<h2>Web Development</h2>
-							<div class="swiper mySwiper">
+							<div class="swiper myPortfolioSwiper">
 								<div class="swiper-wrapper swiper-wrapper-portfolio">
 									<div class="swiper-slide swiper-slide-portfolio">
 										<img
@@ -252,7 +252,7 @@
 						<!-- Category 2 -->
 						<div class="portfolio-category">
 							<h2>Mobile Apps</h2>
-							<div class="swiper mySwiper">
+							<div class="swiper myPortfolioSwiper">
 								<div class="swiper-wrapper swiper-wrapper-portfolio">
 									<div class="swiper-slide swiper-slide-portfolio">
 										<img
@@ -384,7 +384,7 @@
 
 		<!-- Initialize Swiper -->
 		<script>
-			var swiper = new Swiper('.mySwiper', {
+			var swiper = new Swiper('.myPortfolioSwiper', {
 				spaceBetween: 30,
 				centeredSlides: true,
 				loop: true,
@@ -402,6 +402,8 @@
 					nextEl: '.swiper-button-next',
 					prevEl: '.swiper-button-prev',
 				},
+				grabCursor: true,
+				draggable: true,
 				/* breakpoints: {
 					0: {
 						slidesPerView: 1,
