@@ -292,6 +292,7 @@ body.dark-mode .tech-category ul li {
 	background-color: #c3c3c3;
 }
 body.dark-mode .portfolio-category h2,
+body.dark-mode .client-details p,
 body.dark-mode .privacy-policy h2,
 body.dark-mode .terms h2,
 body.dark-mode .service h2,
@@ -535,6 +536,7 @@ body.dark-mode .main .about h2 {
 .about-text {
 	flex: 1;
 	min-width: 300px;
+	text-align: justify;
 }
 
 .about-text h2 {
@@ -690,7 +692,16 @@ body.dark-mode .main .about h2 {
 .testimonials h2 {
 	font-size: 2em;
 	color: #333; /* Dark grey text */
-	margin-bottom: 40px;
+	margin-bottom: 20px;
+}
+.testimonials h4 {
+	font-size: 1.3rem;
+	color: #333; /* Dark grey text */
+	margin: 20px 0;
+	padding: 0;
+	/* text-align: center; */
+	font-weight: 300;
+	white-space: normal;
 }
 
 .testimonials-grid {
@@ -708,7 +719,7 @@ body.dark-mode .main .about h2 {
 }
 
 .testimonial-item p {
-	font-size: 1.1em;
+	font-size: 1.3em;
 	color: #666; /* Medium grey text */
 	line-height: 1.6;
 	margin-bottom: 20px;
@@ -723,6 +734,7 @@ body.dark-mode .main .about h2 {
 .client-info img {
 	width: 60px;
 	height: 60px;
+	object-fit: cover;
 	border-radius: 50%;
 	margin-right: 15px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for image */
@@ -736,7 +748,7 @@ body.dark-mode .main .about h2 {
 
 .client-details p {
 	font-size: 1em;
-	color: #999; /* Light grey text */
+	color: #008cff;
 	margin: 5px 0 0 0;
 }
 
@@ -1695,6 +1707,8 @@ body.dark-mode .main .about h2 {
 	/* Show mobile menu toggle */
 	.mobile-menu {
 		display: flex;
+		position: absolute;
+		right: 1.25rem;
 	}
 
 	/* Mobile Navigation Menu */
@@ -1779,8 +1793,10 @@ body.dark-mode .main .about h2 {
 
 	.nav__submenu-item a {
 		padding: 10px 0;
+		margin-left: 20px;
 		color: #000;
 		font-size: 1rem;
+		white-space: pre;
 	}
 
 	.cta__button {
@@ -1789,7 +1805,9 @@ body.dark-mode .main .about h2 {
 
 	.theme-toggle-btn {
 		display: flex;
-		margin-left: 5em;
+		position: absolute;
+		right: 3.12em;
+
 		/* font-size: 1.8em; */
 	}
 
@@ -1876,12 +1894,12 @@ body.dark-mode .main .about h2 {
 		padding: 2rem 0;
 	}
 	.swiper-slide-portfolio {
-		padding: 2rem 0;
+		padding: 2rem;
 	}
 
 	.swiper-slide-portfolio img {
-		width: 20em;
-		max-width: 25em;
+		width: 15em;
+		max-width: 20em;
 	}
 
 	.swiper-button-next::after,
@@ -1957,7 +1975,13 @@ body.dark-mode .main .about h2 {
 		display: initial;
 	}
 	.whatsapp-btn a i {
-		font-size: 2rem;
+		font-size: 1.8rem;
+		width: 45px;
+		height: 45px;
+	}
+	.scroll-to-top {
+		width: 45px;
+		height: 45px;
 	}
 }
 
