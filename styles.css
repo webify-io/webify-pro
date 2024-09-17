@@ -1541,15 +1541,28 @@ body.dark-mode .main .about h2 {
 	max-width: 15em;
 	border-radius: 8px;
 }
-/* Adjust the Swiper buttons if needed to fit within the 5em height */
-.swiper-button-next,
-.swiper-button-prev,
-.swiper-pagination {
-	color: #008cff;
-	font-weight: 800;
+
+/* Adjust the Swiper buttons with the theme */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+	font-size: 1rem;
 }
 
-/* Website development Landing Section */
+.swiper-button-next,
+.swiper-button-prev {
+	/* margin-top: 10rem; */
+	width: 40px;
+	height: 40px;
+	background-color: #00a8ff;
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Website development Pages Landing Section */
 /* Development Steps Section */
 /* Container */
 .development-steps {
@@ -1912,25 +1925,6 @@ body.dark-mode .main .about h2 {
 	.swiper-slide-portfolio img {
 		width: 15em;
 		max-width: 20em;
-	}
-
-	.swiper-button-next::after,
-	.swiper-button-prev::after {
-		font-size: 1rem;
-	}
-
-	.swiper-button-next,
-	.swiper-button-prev {
-		/* margin-top: 10rem; */
-		width: 40px;
-		height: 40px;
-		background-color: #00a8ff;
-		color: #fff;
-		border: 2px solid #fff;
-		border-radius: 50%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
 	}
 
 	/* Process Pages */
