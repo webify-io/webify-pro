@@ -247,6 +247,7 @@ body.dark-mode {
 body.dark-mode h1,
 body.dark-mode h2,
 body.dark-mode h3,
+body.dark-mode h4,
 body.dark-mode footer h3,
 body.dark-mode .products-text li,
 body.dark-mode .about-text strong {
@@ -254,7 +255,7 @@ body.dark-mode .about-text strong {
 }
 body.dark-mode .service-card,
 body.dark-mode .portfolio-item,
-body.dark-mode .testimonial-item,
+body.dark-mode .swiper-slide-testimonials,
 body.dark-mode .blog-content,
 body.dark-mode .contact-details,
 body.dark-mode .contact-form,
@@ -536,7 +537,6 @@ body.dark-mode .main .about h2 {
 .about-text {
 	flex: 1;
 	min-width: 300px;
-	text-align: justify;
 }
 
 .about-text h2 {
@@ -549,6 +549,7 @@ body.dark-mode .main .about h2 {
 	margin: 0 0 20px;
 	line-height: 1.6;
 	color: #666; /* Medium grey text */
+	text-align: justify;
 }
 
 .about-image {
@@ -695,22 +696,35 @@ body.dark-mode .main .about h2 {
 	margin-bottom: 20px;
 }
 .testimonials h4 {
-	font-size: 1.3rem;
+	font-size: 1.245rem;
 	color: #333; /* Dark grey text */
-	margin: 20px 0;
+	margin: 15px 0;
 	padding: 0;
 	/* text-align: center; */
-	font-weight: 300;
+	font-weight: lighter;
 	white-space: normal;
+	text-wrap: wrap;
+	line-height: 1.4;
+	word-spacing: 5px;
 }
 
-.testimonials-grid {
+/* .testimonials-grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	gap: 20px;
+} */
+
+.myTestimonialsSwiper {
+	padding: 2rem 5rem;
 }
 
-.testimonial-item {
+.swiper-wrapper-testimonials {
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+	align-items: center;
+}
+
+.swiper-slide-testimonials {
 	background-color: rgba(249, 249, 255, 1);
 	border-radius: 10px;
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
@@ -718,11 +732,12 @@ body.dark-mode .main .about h2 {
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.testimonial-item p {
+.swiper-slide-testimonials p {
 	font-size: 1.3em;
 	color: #666; /* Medium grey text */
 	line-height: 1.6;
 	margin-bottom: 20px;
+	font-style: italic;
 }
 
 .client-info {
@@ -752,9 +767,9 @@ body.dark-mode .main .about h2 {
 	margin: 5px 0 0 0;
 }
 
-.testimonial-item:hover {
-	transform: translateY(-10px); /* Lift effect on hover */
-	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+.swiper-slide-testimonials:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Technology Section */
@@ -786,7 +801,7 @@ body.dark-mode .main .about h2 {
 }
 
 /* Ensure the image adjusts within the parent container */
-.swiper-slide img {
+.swiper-slide-technology img {
 	max-height: 100%; /* Ensure image doesn't exceed container height */
 	max-width: 100%; /* Ensure image doesn't exceed container width */
 	object-fit: contain; /* Keep the aspect ratio of the image */
@@ -1269,6 +1284,10 @@ body.dark-mode .main .about h2 {
 .main .about-text p {
 	margin: 0;
 }
+.main .about-text p:not(:last-child) {
+	padding-bottom: 20px;
+}
+
 .main .services h2 {
 	margin-bottom: 20px;
 }
@@ -1840,8 +1859,22 @@ body.dark-mode .main .about h2 {
 		padding: 3.5rem 1rem;
 	} */
 
-	.swiper-slide img {
+	.swiper-slide-technology img {
 		width: 2.5em;
+	}
+
+	/* Swiper - Testimonials */
+	.testimonials {
+		padding: 2rem 0;
+	}
+
+	.myTestimonialsSwiper {
+		padding: 2rem 1.25rem;
+	}
+
+	.swiper-slide-testimonials:hover {
+		transform: unset;
+		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 	}
 
 	.contact-details,
@@ -1886,6 +1919,7 @@ body.dark-mode .main .about h2 {
 		padding-left: 0;
 	} */
 
+	/* Swiper - Portfolio */
 	.portfolio-page {
 		padding: 0 1.25rem;
 	}
@@ -1921,34 +1955,7 @@ body.dark-mode .main .about h2 {
 		align-items: center;
 	}
 
-	/* .swiper-button-next {
-		right: 20px;
-	}
-
-	.swiper-button-prev {
-		left: 20px;
-	} */
-
-	/* 	.swiper-button-next::after,
-	.swiper-button-prev::after {
-		font-size: 1rem;
-		color: #fff;
-	}
-
-	.swiper-button-next,
-	.swiper-button-prev {
-		position: absolute;
-   		bottom: 10px;
-		background-color: #008cff;
-		color: #fff;
-		border-radius: 50%;
-		width: 2rem;
-		height: 2rem;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	} */
-
+	/* Process Pages */
 	.process,
 	.our-services {
 		padding: 0 1.25rem;
@@ -1975,13 +1982,7 @@ body.dark-mode .main .about h2 {
 		display: initial;
 	}
 	.whatsapp-btn a i {
-		font-size: 1.8rem;
-		width: 45px;
-		height: 45px;
-	}
-	.scroll-to-top {
-		width: 45px;
-		height: 45px;
+		font-size: 2rem;
 	}
 }
 

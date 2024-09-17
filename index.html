@@ -528,57 +528,61 @@
 				<h2>What Our Clients Say</h2>
 				<h4>At Webify we value our partners and their vision.</h4>
 				<h4>This is what they have to say about their experiences with us.</h4>
-				<div class="testimonials-grid">
-					<div class="testimonial-item">
-						<p>
-							"Webify transformed our online presence. Their attention to detail
-							and creativity is unmatched."
-						</p>
-						<div class="client-info">
-							<img
-								src="assets/testimonials/testimonial-3.webp"
-								alt="Client 1"
-							/>
-							<div class="client-details">
-								<h3>Michael Radebe</h3>
-								<p>CEO, MaxiPharma</p>
+				<div class="swiper myTestimonialsSwiper">
+					<div class="swiper-wrapper swiper-wrapper-testimonials">
+						<div class="swiper-slide swiper-slide-testimonials">
+							<p>
+								"Webify transformed our online presence. Their attention to
+								detail and creativity is unmatched."
+							</p>
+							<div class="client-info">
+								<img
+									src="assets/testimonials/testimonial-3.webp"
+									alt="Client 1"
+								/>
+								<div class="client-details">
+									<h3>Michael Radebe</h3>
+									<p>CEO, MaxiPharma</p>
+								</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="testimonial-item">
-						<p>
-							"Working with Webify was a game-changer. Their team delivered
-							exactly what we needed, on time and within budget."
-						</p>
-						<div class="client-info">
-							<img
-								src="assets/testimonials/testimonial-5.webp"
-								alt="Client 2"
-							/>
-							<div class="client-details">
-								<h3>Ava Thompson</h3>
-								<p>Marketing Director, Creative Co.</p>
+						<div class="swiper-slide swiper-slide-testimonials">
+							<p>
+								"Working with Webify was a game-changer. Their team delivered
+								exactly what we needed, on time and within budget."
+							</p>
+							<div class="client-info">
+								<img
+									src="assets/testimonials/testimonial-5.webp"
+									alt="Client 2"
+								/>
+								<div class="client-details">
+									<h3>Ava Thompson</h3>
+									<p>Marketing Director, Creative Co.</p>
+								</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="testimonial-item">
-						<p>
-							"Their expertise in web development and design helped us launch a
-							successful product in record time."
-						</p>
-						<div class="client-info">
-							<img
-								src="assets/testimonials/testimonial-6.webp"
-								alt="Client 3"
-							/>
-							<div class="client-details">
-								<h3>Norman Gantsho</h3>
-								<p>Founder, Troops Security</p>
+						<div class="swiper-slide swiper-slide-testimonials">
+							<p>
+								"Their expertise in web development and design helped us launch
+								a successful product in record time."
+							</p>
+							<div class="client-info">
+								<img
+									src="assets/testimonials/testimonial-6.webp"
+									alt="Client 3"
+								/>
+								<div class="client-details">
+									<h3>Norman Gantsho</h3>
+									<p>Founder, Troops Security</p>
+								</div>
 							</div>
 						</div>
 					</div>
+					<!-- Swiper buttons -->
+					<div class="swiper-pagination"></div>
 				</div>
 			</div>
 		</section>
@@ -812,6 +816,42 @@
 						slidesPerView: 6,
 					},
 				},
+			});
+		</script>
+
+		<!-- Initialize Testimonials Swiper -->
+		<script>
+			var swiper = new Swiper('.myTestimonialsSwiper', {
+				spaceBetween: 30,
+				/* centeredSlides: true, */
+				loop: true,
+				slidesPerView: 3,
+
+				autoplay: {
+					delay: 5000,
+					disableOnInteraction: false,
+				},
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				},
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+				breakpoints: {
+					0: {
+						slidesPerView: 1,
+					},
+					450: {
+						slidesPerView: 2,
+					},
+					900: {
+						slidesPerView: 3,
+					},
+				},
+				// Dynamically set slidesPerView based on window width
+				//slidesPerView: window.innerWidth < 700 ? 2 : 'auto',
 			});
 		</script>
 
