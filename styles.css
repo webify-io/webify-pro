@@ -1549,33 +1549,6 @@ body.dark-mode .main .about h2 {
 	font-weight: 800;
 }
 
-/* .swiper-pagination {
-	bottom: 0.5em;
-	text-align: center;
-} */
-
-/* .slider-btn {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	background-color: #00a8ff;
-	border: none;
-	color: #ffffff;
-	padding: 10px 16px;
-	border-radius: 50%;
-	cursor: pointer;
-	font-size: 18px;
-	z-index: 10;
-}
-
-.slider-btn.prev {
-	left: 10px;
-}
-
-.slider-btn.next {
-	right: 10px;
-} */
-
 /* Website development Landing Section */
 /* Development Steps Section */
 /* Container */
@@ -1702,8 +1675,7 @@ body.dark-mode .main .about h2 {
 	text-decoration: none;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
 	body.dark-mode .theme-toggle-btn .sun {
 		color: #f39c12;
 	}
@@ -1717,11 +1689,6 @@ body.dark-mode .main .about h2 {
 		min-height: unset;
 		align-content: unset;
 	}
-
-	/* Hide regular navigation menu on mobile */
-	/* .nav {
-		display: none;
-	} */
 
 	/* Show mobile menu toggle */
 	.mobile-menu {
@@ -1829,7 +1796,10 @@ body.dark-mode .main .about h2 {
 
 		/* font-size: 1.8em; */
 	}
+}
 
+/* Responsive Design */
+@media (max-width: 768px) {
 	/* Hero Section */
 	.hero {
 		background-image: none;
