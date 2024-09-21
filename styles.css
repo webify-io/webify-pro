@@ -706,15 +706,16 @@ body.dark-mode .main .about h2 {
 	margin-bottom: 20px;
 }
 .testimonials h4 {
-	font-size: 1.185rem;
+	font-size: 1.3rem;
+	font-family: 'DM Sans', sans-serif;
 	color: #333; /* Dark grey text */
-	margin: 15px 0;
+	margin: 10px 0;
 	padding: 0;
 	/* text-align: center; */
-	font-weight: lighter;
+	font-weight: 300;
 	white-space: normal;
 	text-wrap: wrap;
-	line-height: 1.6;
+	/* line-height: 1.4; */
 	/* word-spacing: 5px; */
 }
 
@@ -1520,6 +1521,7 @@ body.dark-mode .main .about h2 {
 
 /* Call-to-Action Button */
 .portfolio-category-cta-btn {
+	margin-bottom: 10px;
 	padding: 10px 20px;
 	font-size: 1em;
 }
