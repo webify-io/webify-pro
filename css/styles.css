@@ -474,13 +474,13 @@ body.dark-mode .main .about h2 {
 }
 
 .hero .overlay {
-	mask-image: linear-gradient(
+	/* mask-image: linear-gradient(
 		to bottom,
 		transparent,
 		black 10%,
 		black 70%,
 		transparent
-	);
+	); */
 	/* -webkit-mask-image: linear-gradient(
 		to bottom,
 		transparent,
@@ -488,7 +488,7 @@ body.dark-mode .main .about h2 {
 		black 70%,
 		transparent
 	); */ /* For WebKit browsers */
-	/* background-color: rgba(0, 0, 0, 0.45); */ /* Black overlay with 60% opacity */
+	background-color: rgba(0, 0, 0, 0.35); /* Black overlay with 60% opacity */
 	height: 100%;
 	display: flex;
 	justify-content: center;
@@ -1630,24 +1630,21 @@ body.dark-mode .main .about h2 {
 	border-radius: 10px;
 	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 	opacity: 0;
-	overflow: hidden;
-	width: 0%;
-	transition: all 0.8s ease-in-out;
+	visibility: hidden;
+	transition: all 1.5s ease-in-out;
 }
 
 .step:nth-child(even) {
 	flex-direction: row-reverse;
-	overflow: hidden;
-	width: 0%;
+	visibility: hidden;
 }
 
 .step-active {
 	opacity: 1;
-
-	width: 100%;
+	visibility: visible;
 }
 .step-active:nth-child(even) {
-	width: 100%;
+	visibility: visible;
 }
 
 /* Step Image */
@@ -1870,7 +1867,7 @@ body.dark-mode .main .about h2 {
 @media (max-width: 768px) {
 	/* Hero Section */
 	.hero {
-		background-image: none;
+		/* background-image: none; */
 		padding-top: 2rem;
 	}
 

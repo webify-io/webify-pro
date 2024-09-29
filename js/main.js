@@ -263,7 +263,7 @@ document
 	.addEventListener('submit', function (event) {
 		var emailField = document.getElementById('email');
 		var email = emailField.value;
-		var emailPattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+		//var emailPattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
 
 		if (!emailPattern.test(email)) {
 			alert('Please enter a valid email address.');
