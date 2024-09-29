@@ -4,61 +4,61 @@
 		<!-- SEO - meta<tags> for serach engine optimisation -->
 		<!-- Additional Meta Tags -->
 		<meta name="robots" content="index, follow" />
+
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>
+			:::: Webify :::: Webify - Innovative Web Development Solutions
+		</title>
 		<!-- Primary Meta Tags -->
 		<meta
 			name="description"
 			content="Webify offers cutting-edge web development services to transform your business presence online. Specializing in custom websites, e-commerce solutions, and user-friendly designs."
 		/>
-		<!-- Favicon Icons - Branding in tabs and Bookmarks -->
-		<meta name="msapplication-TileColor" content="#1b1b1f" />
-		<meta name="theme-color" content="#47b1e9" />
-
+		<!-- JSON-LD (JavaScript Object Notation for Linked Data) Code - SEO -->
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "WebSite",
+				"name": "Webify",
+				"url": "https://webify.org.za",
+				"description": "Webify offers cutting-edge web development services to transform your business presence online. Specializing in custom websites, e-commerce solutions, and more."
+			}
+		</script>
 		<!-- Keywords Meta Tag -->
 		<meta
 			name="keywords"
 			content="Webify, webify, web, webify web solutions, webify solutions, web solutions, software, tech, technology, software development, mobile development, seo, search engine optimization, web development johannesburg, web development south africa, cheap websites, affordable websites, easy websites, simple websites, web development, website design, e-commerce solutions, custom web applications, user experience design, responsive web design, webify, digital transformation, business website, web development company, Website Optimization, website Consultation, API Development, Backend Development, UI/UX Design"
 		/>
-		<title>Webify - Innovative Web Development Solutions</title>
-		<!-- Favicon Icons - branding in tab  -->
-		<!-- For modern browsers -->
-		<link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
+
+		<!-- Favicon Icons [Branding in tabs]  -->
+		<!-- Standard favicon - For modern browsers -->
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
 		<!-- For IE 10 and below -->
-		<link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+		<link rel="shortcut icon" href="/favicon.ico" />
 		<!-- For PNG favicons -->
 		<link
 			rel="icon"
 			sizes="any"
 			type="image/png"
-			href="assets/favicon/logo-250x250.png"
+			href="/android-chrome-192x192.png"
 		/>
-
-		<!-- Standard favicon -->
-		<link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
 
 		<!-- For iOS - 180x180px -->
-		<link
-			rel="apple-touch-icon"
-			sizes="180x180"
-			href="assets/favicon/logo-160x160.png"
-		/>
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 
 		<!-- 32x32 and 16x16 pixel icons for general use -->
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="32x32"
-			href="assets/favicon/logo-32x32.png"
-		/>
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="16x16"
-			href="assets/favicon/logo-16x16.png"
-		/>
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+
 		<!-- Web App Manifest -->
-		<link rel="manifest" href="assets/favicon/site.webmanifest" />
+		<link rel="manifest" href="/site.webmanifest" />
+
+		<!-- Favicon Icons - Branding in tabs and Bookmarks -->
+		<meta name="msapplication-TileColor" content="#ffc40d" />
+		<meta name="theme-color" content="#5bbad5" />
 
 		<!-- Link Swiper's CSS -->
 		<link
@@ -73,7 +73,7 @@
 		/>
 
 		<!-- Link to external CSS -->
-		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="/css/styles.css" />
 	</head>
 
 	<body>
@@ -110,34 +110,36 @@
 							>
 							<ul class="nav__submenu">
 								<li class="nav__submenu-item">
-									<a href="/services/website-development.html" class="nav__link"
+									<a
+										href="/views/services/website-development.html"
+										class="nav__link"
 										>Website Development</a
 									>
 								</li>
 								<li class="nav__submenu-item">
 									<a
-										href="/services/custom-website-development.html"
+										href="/views/services/custom-website-development.html"
 										class="nav__link"
 										>Custom Software Development</a
 									>
 								</li>
 								<li class="nav__submenu-item">
 									<a
-										href="/services/mobile-application-development.html"
+										href="/views/services/mobile-application-development.html"
 										class="nav__link"
 										>Android & IOS App Development</a
 									>
 								</li>
 								<li class="nav__submenu-item">
 									<a
-										href="/services/website-hosting-maintenance-services.html"
+										href="/views/services/website-hosting-maintenance-services.html"
 										class="nav__link"
 										>Website Hosting & Maintenance Services</a
 									>
 								</li>
 								<li class="nav__submenu-item">
 									<a
-										href="/services/application-maintenance-and-support.html"
+										href="/views/services/application-maintenance-and-support.html"
 										class="nav__link"
 										>Application Maintenance & Support</a
 									>
@@ -151,23 +153,32 @@
 							<a href="#blog" class="nav__link">Blog</a>
 						</li>
 						<li class="nav__item nav__dropdown">
-							<a href="/work-process/work-process.html" class="nav__link">
+							<a href="/views/work-process/work-process.html" class="nav__link">
 								Work Process <span class="caret">&#9662;</span>
 							</a>
 							<ul class="nav__submenu">
 								<li class="nav__submenu-item">
-									<a href="/work-process/services.html" class="nav__link"
+									<a href="/views/work-process/services.html" class="nav__link"
 										>Services</a
 									>
 								</li>
 								<li class="nav__submenu-item">
-									<a href="/work-process/packages.html" class="nav__link"
+									<a href="/views/work-process/packages.html" class="nav__link"
 										>Packages</a
 									>
 								</li>
 								<li class="nav__submenu-item">
-									<a href="/work-process/tech-stack.html" class="nav__link"
+									<a
+										href="/views/work-process/tech-stack.html"
+										class="nav__link"
 										>Tech Stack</a
+									>
+								</li>
+								<li class="nav__submenu-item">
+									<a
+										href="/views/work-process/work-process.html"
+										class="nav__link"
+										>Work Process</a
 									>
 								</li>
 							</ul>
@@ -237,7 +248,9 @@
 								various industries, and we pride ourselves on our ability to
 								adapt and innovate in a rapidly evolving digital landscape.
 							</p>
-							<a href="about-us.html" class="cta-btn"> See More About Us </a>
+							<a href="/views/about-us.html" class="cta-btn">
+								See More About Us
+							</a>
 						</div>
 						<div class="about-image">
 							<img src="assets/team/team.webp" alt="Our Team" />
@@ -297,7 +310,7 @@
 						</div>
 					</div>
 					<a
-						href="work-process/services.html"
+						href="/views/work-process/services.html"
 						class="cta-btn portfolio-cta-btn"
 					>
 						View More Services
@@ -524,7 +537,7 @@
 							</div>
 						</div>
 					</div>
-					<a href="portfolio.html" class="cta-btn portfolio-cta-btn">
+					<a href="/views/portfolio.html" class="cta-btn portfolio-cta-btn">
 						See More Projects
 					</a>
 				</div>
@@ -672,7 +685,7 @@
 						</div>
 						<div class="contact-form">
 							<h3>Send Us a Message</h3>
-							<form action="submit-form.php" method="POST">
+							<form action="/php/submit-form.php" method="POST">
 								<!-- Honeypot -->
 								<input name="bot-field" style="display: none" />
 								<input type="text" name="_honey" style="display: none" />
@@ -737,8 +750,10 @@
 						<div class="footer-policy">
 							<h3>Legal</h3>
 							<ul>
-								<li><a href="privacy-policy.html">Privacy Policy</a></li>
-								<li><a href="terms-of-service.html">Terms of Service</a></li>
+								<li><a href="/views/privacy-policy.html">Privacy Policy</a></li>
+								<li>
+									<a href="/views/terms-of-service.html">Terms of Service</a>
+								</li>
 							</ul>
 						</div>
 					</div>
@@ -772,7 +787,7 @@
 			<div class="popup-content">
 				<button id="closePopup" class="close-popup">&times;</button>
 				<h2>Quick Contact</h2>
-				<form id="contactForm" action="submit-form.php" method="POST">
+				<form id="contactForm" action="/php/submit-form.php" method="POST">
 					<div class="form-group">
 						<label for="name">Name:</label>
 						<input type="text" id="name" name="name" required />
@@ -868,7 +883,7 @@
 		</script>
 
 		<!-- Main JS -->
-		<script src="main.js"></script>
+		<script src="/js/main.js"></script>
 
 		<!-- Optional JavaScript for Mobile Menu Toggle -->
 		<!-- <script>

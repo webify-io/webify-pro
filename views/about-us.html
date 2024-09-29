@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- SEO - meta<tags> for serach engine optimisation -->
+		<!-- Additional Meta Tags -->
+		<meta name="robots" content="index, follow" />
+
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>About Us - Webify</title>
+		<!-- Primary Meta Tags -->
+		<meta
+			name="description"
+			content="Webify offers cutting-edge web development services to transform your business presence online. Specializing in custom websites, e-commerce solutions, and user-friendly designs."
+		/>
+		<!-- JSON-LD (JavaScript Object Notation for Linked Data) Code - SEO -->
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "WebSite",
+				"name": "Webify",
+				"url": "https://webify.org.za",
+				"description": "Webify offers cutting-edge web development services to transform your business presence online. Specializing in custom websites, e-commerce solutions, and more."
+			}
+		</script>
+		<!-- Keywords Meta Tag -->
+		<meta
+			name="keywords"
+			content="Webify, webify, web, webify web solutions, webify solutions, web solutions, software, tech, technology, software development, mobile development, seo, search engine optimization, web development johannesburg, web development south africa, cheap websites, affordable websites, easy websites, simple websites, web development, website design, e-commerce solutions, custom web applications, user experience design, responsive web design, webify, digital transformation, business website, web development company, Website Optimization, website Consultation, API Development, Backend Development, UI/UX Design"
+		/>
+
+		<!-- Favicon Icons [Branding in tabs]  -->
+		<!-- Standard favicon - For modern browsers -->
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+		<!-- For IE 10 and below -->
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<!-- For PNG favicons -->
+		<link
+			rel="icon"
+			sizes="any"
+			type="image/png"
+			href="/android-chrome-192x192.png"
+		/>
+
+		<!-- For iOS - 180x180px -->
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+		<!-- 32x32 and 16x16 pixel icons for general use -->
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+
+		<!-- Web App Manifest -->
+		<link rel="manifest" href="/site.webmanifest" />
+
+		<!-- Favicon Icons - Branding in tabs and Bookmarks -->
+		<meta name="msapplication-TileColor" content="#ffc40d" />
+		<meta name="theme-color" content="#5bbad5" />
+
+		<!-- Link Swiper's CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+
+		<!-- boxicons stylesheet for icons-->
+		<link
+			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+
+		<!-- Link to external CSS -->
+		<link rel="stylesheet" href="/css/styles.css" />
+	</head>
+
+	<body>
+		<!-- Loader -->
+		<div id="loader" class="loader">
+			<div class="loader-spinner"></div>
+		</div>
+
+		<!-- Main Content -->
+		<div id="content" class="content hidden">
+			<!-- Header Section -->
+			<header class="header">
+				<div class="container">
+					<!-- Logo -->
+					<div class="logo">
+						<img
+							src="/assets/favicon/logo-160x160.png"
+							alt="Webify Company Logo"
+						/>
+
+						<div class="logoName">
+							<a href="index.html" class="logoName">Webify</a>
+						</div>
+					</div>
+
+					<!-- Navigation Menu -->
+					<nav class="nav">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a href="/" class="nav__link">Home</a>
+							</li>
+							<li class="nav__item">
+								<a href="/index.html#about" class="nav__link">About</a>
+							</li>
+							<li class="nav__item nav__dropdown">
+								<a href="/index.html#services" class="nav__link"
+									>Services <span class="caret">&#9662;</span></a
+								>
+								<ul class="nav__submenu">
+									<li class="nav__submenu-item">
+										<a
+											href="/views/services/website-development.html"
+											class="nav__link"
+											>Website Development</a
+										>
+									</li>
+									<li class="nav__submenu-item">
+										<a
+											href="/views/services/custom-website-development.html"
+											class="nav__link"
+											>Custom Software Development</a
+										>
+									</li>
+									<li class="nav__submenu-item">
+										<a
+											href="/views/services/mobile-application-development.html"
+											class="nav__link"
+											>Android & IOS App Development</a
+										>
+									</li>
+									<li class="nav__submenu-item">
+										<a
+											href="/views/services/website-hosting-maintenance-services.html"
+											class="nav__link"
+											>Website Hosting & Maintenance Services</a
+										>
+									</li>
+									<li class="nav__submenu-item">
+										<a
+											href="/views/services/application-maintenance-and-support.html"
+											class="nav__link"
+											>Application Maintenance & Support</a
+										>
+									</li>
+								</ul>
+							</li>
+							<li class="nav__item">
+								<a href="/index.html#portfolio" class="nav__link">Portfolio</a>
+							</li>
+							<li class="nav__item">
+								<a href="/index.html#blog" class="nav__link">Blog</a>
+							</li>
+							<li class="nav__item nav__dropdown">
+								<a
+									href="/views/work-process/work-process.html"
+									class="nav__link"
+								>
+									Work Process <span class="caret">&#9662;</span>
+								</a>
+								<ul class="nav__submenu">
+									<li class="nav__submenu-item">
+										<a href="/work-process/services.html" class="nav__link"
+											>Services</a
+										>
+									</li>
+									<li class="nav__submenu-item">
+										<a href="/work-process/packages.html" class="nav__link"
+											>Packages</a
+										>
+									</li>
+									<li class="nav__submenu-item">
+										<a href="/work-process/tech-stack.html" class="nav__link"
+											>Tech Stack</a
+										>
+									</li>
+								</ul>
+							</li>
+							<li class="nav__item">
+								<a href="#contact" class="nav__link">Contact</a>
+							</li>
+						</ul>
+					</nav>
+
+					<!-- Light/Dark Button -->
+					<button id="themeToggle" class="theme-toggle-btn">
+						<span class="sun">&#9728;</span>
+						<span class="moon">&#9790;</span>
+					</button>
+
+					<!-- CTA Button -->
+					<div class="cta">
+						<a href="#contact" class="cta__button">Get a Free Quote</a>
+					</div>
+
+					<!-- Mobile Menu Toggle (Optional) -->
+					<div class="mobile-menu">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
+				</div>
+			</header>
+
+			<main class="main">
+				<!-- About Section -->
+				<section id="about" class="about more-about">
+					<div class="container">
+						<div class="about-content">
+							<div class="about-text">
+								<h2>About Us</h2>
+								<span class="bottom-border"></span>
+								<p>
+									At Webify, we are dedicated to creating exceptional digital
+									experiences. Our team of skilled professionals is committed to
+									delivering innovative web solutions that help businesses
+									thrive in the digital age. With a focus on quality,
+									creativity, and client satisfaction, we strive to exceed
+									expectations and drive success through our cutting-edge
+									technology and personalized service.
+								</p>
+								<p>
+									We have worked with a diverse range of clients, from startups
+									to established enterprises, providing tailor-made solutions
+									that address their unique needs and goals. Our expertise spans
+									across various industries, and we pride ourselves on our
+									ability to adapt and innovate in a rapidly evolving digital
+									landscape.
+								</p>
+							</div>
+							<div class="about-image">
+								<img src="/assets/about-us/about-us.webp" alt="Our Team" />
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Services Section -->
+				<section class="services" id="services">
+					<div class="container">
+						<h2>Why Choose Us?</h2>
+						<span class="bottom-border"></span>
+						<div class="services-cards">
+							<div class="service-card">
+								<img src="/assets/about-us/Innovative.png" alt="Innovative" />
+								<h3>Innovative</h3>
+								<p>
+									Create transformational new digital products at the
+									intersection of market opportunity, customer experience and
+									emerging technology.
+								</p>
+							</div>
+							<div class="service-card">
+								<img
+									src="/assets/about-us/Source-Code-Ownership.png"
+									alt="Source Code Ownership"
+								/>
+								<h3>Source Code Ownership</h3>
+								<p>
+									We build it, you own it. It’s that simple. After we finish
+									development, we pass over the complete source code so that
+									your project is yours. It’s completely your decision whether
+									you want to continue working with us for maintenance and
+									future updates.
+								</p>
+							</div>
+							<div class="service-card">
+								<img
+									src="/assets/about-us/No-3rd-Parties.png"
+									alt="No 3rd Parties"
+								/>
+								<h3>No 3rd Parties</h3>
+								<p>
+									As they say - “ Three is a CROWD ”. That’s why at Webify Web
+									Solutions we keep everything in-house. Our developers,
+									designers, project managers, and everything in between are all
+									our own highly skilled team members. This allows us to ensure
+									high-quality and on-time projects.
+								</p>
+							</div>
+							<div class="service-card">
+								<img
+									src="/assets/about-us/Local-Accountable.png"
+									alt="Local & Accountable"
+								/>
+								<h3>Local & Accountable</h3>
+								<p>
+									We are a proudly South African company, who loves to bring
+									exceptional value and service at the best prices to all our
+									partners, especially fellow SME's, we want to be more than
+									just a name on a computer screen, we want to be your partner
+									in success.
+								</p>
+							</div>
+							<div class="service-card">
+								<img
+									src="/assets/about-us/Competitive-advantage.png"
+									alt="Collaborative"
+								/>
+								<h3>Collaborative</h3>
+								<p>
+									Our team members thrive on working with a diverse group of
+									people to find the right answer. We are skilled at leveraging
+									the strengths and expertise of our team members.
+								</p>
+							</div>
+							<div class="service-card">
+								<img
+									src="/assets/about-us/Full-Transparency.png"
+									alt="Full Transparency"
+								/>
+								<h3>Full Transparency</h3>
+								<p>
+									We believe in building long-term partnerships. We do this
+									through our commitment to absolute transparency about our
+									process & Timelines for your project, the frequency of updates
+									at your discretion.
+									<!-- we will always keep you up
+									to date on the status of your project, budget, risks,
+									timelines, and blockers. -->
+								</p>
+							</div>
+							<div class="service-card">
+								<img
+									src="/assets/about-us/24x7-Support.png"
+									alt="24 hour Support"
+								/>
+								<h3>24 * 7 Support</h3>
+								<p>
+									We recognize that your website is vital to your business, and
+									maintaining its seamless operation is our highest priority.
+									That’s why we offer 24/7 maintenance and support services.
+									<!-- leveraging our 3rd Party Monitoring Systems, which provide:
+									Real-Time Alerts, Comprehensive Reporting, Enhanced Security,
+									Global Reach and Scalability. -->
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- About Section -->
+				<section id="about" class="about">
+					<div class="container">
+						<div class="about-content">
+							<div class="about-text">
+								<h2>Our Mission</h2>
+								<span class="bottom-border"></span>
+								<p>
+									At Webify Web Solutions, our mission is to empower businesses
+									by creating innovative, user-centric web experiences that
+									drive growth and success at an affordable price. We are
+									committed to delivering high-quality, responsive, and visually
+									stunning websites that not only meet but exceed our clients’
+									expectations, ensuring they stand out in a competitive digital
+									landscape.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Contact Section -->
+				<section class="contact" id="contact">
+					<div class="container">
+						<h2>Contact Us</h2>
+						<div class="contact-info">
+							<div class="contact-details">
+								<h3>Get in Touch</h3>
+								<br />
+								<p>
+									Have questions or need assistance? Feel free to reach out to
+									us through the following channels:
+								</p>
+								<br />
+								<ul>
+									<li>
+										<strong>Address:</strong> Diepkloof Zone 6, Soweto, South
+										Africa
+									</li>
+									<li>
+										<strong>Email:</strong>
+										<a href="mailto:info@webify.org.za">info@webify.org.za</a>
+									</li>
+									<li>
+										<strong>Phone:</strong>
+										<a href="tel:0645584110">+27 64 588 4110</a>
+									</li>
+								</ul>
+							</div>
+							<div class="contact-form">
+								<h3>Send Us a Message</h3>
+								<form action="/php/submit-form.php" method="POST">
+									<!-- Honeypot -->
+									<input name="bot-field" style="display: none" />
+									<input type="text" name="_honey" style="display: none" />
+
+									<!-- Form -->
+									<div class="form-group">
+										<label for="name">Name:</label>
+										<input type="text" id="name" name="name" required />
+									</div>
+									<div class="form-group">
+										<label for="email">Email:</label>
+										<input
+											type="email"
+											id="email"
+											name="email"
+											required
+											pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+											title="Please enter a valid email address."
+										/>
+									</div>
+									<div class="form-group">
+										<label for="message">Message:</label>
+										<textarea
+											id="message"
+											name="message"
+											rows="4"
+											required
+										></textarea>
+									</div>
+									<button type="submit" class="cta-btn">Send Message</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<!-- Footer Section -->
+			<footer class="footer">
+				<div class="footer-container">
+					<div class="footer-content">
+						<div class="box">
+							<div class="footer-logo">
+								<h1>Webify</h1>
+								<p>Your partner in innovative web solutions</p>
+							</div>
+						</div>
+						<div class="box">
+							<div class="footer-links">
+								<h3>Quick Links</h3>
+								<ul>
+									<li><a href="/">Home</a></li>
+									<li><a href="/index.html#about">About</a></li>
+									<li><a href="/index.html#services">Services</a></li>
+									<li><a href="/index.html#portfolio">Portfolio</a></li>
+									<li><a href="#">Blog</a></li>
+									<li><a href="/index.html#contact">Contact</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="box">
+							<div class="footer-policy">
+								<h3>Legal</h3>
+								<ul>
+									<li>
+										<a href="/views/privacy-policy.html">Privacy Policy</a>
+									</li>
+									<li>
+										<a href="/views/terms-of-service.html">Terms of Service</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="footer-bottom">
+						<p>&copy; 2024 Webify. All rights reserved.</p>
+					</div>
+				</div>
+			</footer>
+
+			<!-- Scroll to Top Button -->
+			<button id="scrollToTopBtn" class="scroll-to-top">
+				<i class="bx bx-up-arrow-alt"></i>
+			</button>
+
+			<!-- Quick Contact Button -->
+			<button id="quickContactBtn" class="quick-contact-btn">
+				<span>Contact Us</span>
+			</button>
+
+			<!-- WhatsApp Button -->
+			<div id="whatsAppBtn" class="whatsapp-btn">
+				<a href="https://wa.me/27645584110" target="_blank">
+					<i class="bx bxl-whatsapp"></i>
+				</a>
+			</div>
+
+			<!-- Popup Form -->
+			<div id="popupForm" class="popup-overlay">
+				<div class="popup-content">
+					<button id="closePopup" class="close-popup">&times;</button>
+					<h2>Quick Contact</h2>
+					<form id="contactForm" action="/php/submit-form.php" method="POST">
+						<div class="form-group">
+							<label for="name">Name:</label>
+							<input type="text" id="name" name="name" required />
+						</div>
+						<div class="form-group">
+							<label for="email">Email:</label>
+							<input
+								type="email"
+								id="email"
+								name="email"
+								required
+								pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+								title="Please enter a valid email address."
+							/>
+						</div>
+						<div class="form-group">
+							<label for="message">Message:</label>
+							<textarea
+								id="message"
+								name="message"
+								rows="4"
+								required
+							></textarea>
+						</div>
+						<button type="submit" class="cta-btn">Send Message</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<script src="/js/main.js"></script>
+	</body>
+</html>

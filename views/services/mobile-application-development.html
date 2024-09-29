@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- SEO - meta<tags> for search engine optimisation -->
+		<!-- Additional Meta Tags -->
+		<meta name="robots" content="index, follow" />
+
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Mobile Application Development - Webify</title>
+		<!-- Primary Meta Tags -->
+		<meta
+			name="description"
+			content="Webify offers cutting-edge web development services to transform your business presence online. Specializing in custom websites, e-commerce solutions, and user-friendly designs."
+		/>
+		<!-- JSON-LD (JavaScript Object Notation for Linked Data) Code - SEO -->
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "WebSite",
+				"name": "Webify",
+				"url": "https://webify.org.za",
+				"description": "Webify offers cutting-edge web development services to transform your business presence online. Specializing in custom websites, e-commerce solutions, and more."
+			}
+		</script>
+		<!-- Keywords Meta Tag -->
+		<meta
+			name="keywords"
+			content="Webify, webify, web, webify web solutions, webify solutions, web solutions, software, tech, technology, software development, mobile development, seo, search engine optimization, web development johannesburg, web development south africa, cheap websites, affordable websites, easy websites, simple websites, web development, website design, e-commerce solutions, custom web applications, user experience design, responsive web design, webify, digital transformation, business website, web development company, Website Optimization, website Consultation, API Development, Backend Development, UI/UX Design"
+		/>
+
+		<!-- Favicon Icons [Branding in tabs]  -->
+		<!-- Standard favicon - For modern browsers -->
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+		<!-- For IE 10 and below -->
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<!-- For PNG favicons -->
+		<link
+			rel="icon"
+			sizes="any"
+			type="image/png"
+			href="/android-chrome-192x192.png"
+		/>
+
+		<!-- For iOS - 180x180px -->
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+		<!-- 32x32 and 16x16 pixel icons for general use -->
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+
+		<!-- Web App Manifest -->
+		<link rel="manifest" href="/site.webmanifest" />
+
+		<!-- Favicon Icons - Branding in tabs and Bookmarks -->
+		<meta name="msapplication-TileColor" content="#ffc40d" />
+		<meta name="theme-color" content="#5bbad5" />
+
+		<!-- Link Swiper's CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+
+		<!-- boxicons stylesheet for icons-->
+		<link
+			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+
+		<!-- Link to external CSS -->
+		<link rel="stylesheet" href="/css/styles.css" />
+	</head>
+
+	<body>
+		<!-- Loader -->
+		<div id="loader" class="loader">
+			<div class="loader-spinner"></div>
+		</div>
+
+		<!-- Main Content -->
+		<div id="content" class="content hidden">
+			<!-- Header Section -->
+			<header class="header">
+				<div class="container">
+					<!-- Logo -->
+					<div class="logo">
+						<img
+							src="/assets/favicon/logo-160x160.png"
+							alt="Webify Company Logo"
+						/>
+
+						<div class="logoName">
+							<a href="/" class="logoName">Webify</a>
+						</div>
+					</div>
+
+					<!-- Navigation Menu -->
+					<nav class="nav">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a href="/" class="nav__link">Home</a>
+							</li>
+							<li class="nav__item">
+								<a href="/index.html#about" class="nav__link">About</a>
+							</li>
+							<li class="nav__item nav__dropdown">
+								<a href="/index.html#services" class="nav__link"
+									>Services <span class="caret">&#9662;</span></a
+								>
+								<ul class="nav__submenu">
+									<li class="nav__submenu-item">
+										<a
+											href="/views/services/website-development.html"
+											class="nav__link"
+											>Website Development</a
+										>
+									</li>
+									<li class="nav__submenu-item">
+										<a
+											href="/views/services/custom-website-development.html"
+											class="nav__link"
+											>Custom Software Development</a
+										>
+									</li>
+									<li class="nav__submenu-item">
+										<a href="#" class="nav__link"
+											>Android & IOS App Development</a
+										>
+									</li>
+									<li class="nav__submenu-item">
+										<a
+											href="/views/services/website-hosting-maintenance-services.html"
+											class="nav__link"
+											>Website Hosting & Maintenance Services</a
+										>
+									</li>
+									<li class="nav__submenu-item">
+										<a
+											href="/views/services/application-maintenance-and-support.html"
+											class="nav__link"
+											>Application Maintenance & Support</a
+										>
+									</li>
+								</ul>
+							</li>
+							<li class="nav__item">
+								<a href="/index.html#portfolio" class="nav__link">Portfolio</a>
+							</li>
+							<li class="nav__item">
+								<a href="/index.html#blog" class="nav__link">Blog</a>
+							</li>
+							<li class="nav__item nav__dropdown">
+								<a
+									href="/views/work-process/work-process.html"
+									class="nav__link"
+								>
+									Work Process <span class="caret">&#9662;</span>
+								</a>
+								<ul class="nav__submenu">
+									<li class="nav__submenu-item">
+										<a
+											href="/views/work-process/services.html"
+											class="nav__link"
+											>Services</a
+										>
+									</li>
+									<li class="nav__submenu-item">
+										<a
+											href="/views/work-process/packages.html"
+											class="nav__link"
+											>Packages</a
+										>
+									</li>
+									<li class="nav__submenu-item">
+										<a
+											href="/views/work-process/tech-stack.html"
+											class="nav__link"
+											>Tech Stack</a
+										>
+									</li>
+									<li class="nav__submenu-item">
+										<a
+											href="/views/work-process/work-process.html"
+											class="nav__link"
+											>Work Process</a
+										>
+									</li>
+								</ul>
+							</li>
+							<li class="nav__item">
+								<a href="#contact" class="nav__link">Contact</a>
+							</li>
+						</ul>
+					</nav>
+
+					<!-- Light/Dark Button -->
+					<button id="themeToggle" class="theme-toggle-btn">
+						<span class="sun">&#9728;</span>
+						<span class="moon">&#9790;</span>
+					</button>
+
+					<!-- CTA Button -->
+					<div class="cta">
+						<a href="#contact" class="cta__button">Get a Free Quote</a>
+					</div>
+
+					<!-- Mobile Menu Toggle (Optional) -->
+					<div class="mobile-menu">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
+				</div>
+			</header>
+
+			<main class="main">
+				<!-- <div class="container">
+
+				</div> -->
+
+				<!-- About Section (Landing)  -->
+				<section id="about" class="about development-steps">
+					<div class="container">
+						<div class="about-content">
+							<div class="about-text">
+								<h2>Mobile Application Development</h2>
+								<span class="bottom-border"></span>
+								<p>
+									At Webify, we create customized software solutions tailored to
+									your business needs. Our expert team ensures efficiency and
+									quality throughout the software development life cycle with a
+									structured approach.
+								</p>
+								<p>
+									When developing smartphone applications, it’s crucial to
+									choose the right platform by considering factors like
+									development cost, target audience, current technologies,
+									business model, and development time. Our experienced team
+									offers comprehensive guidance to help you design an effective
+									app development process that meets your requirements.
+								</p>
+							</div>
+							<div class="about-image">
+								<img src="/assets/services/appdev_step2.jpg" alt="Our Team" />
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Work Process Section -->
+				<section class="services" id="services">
+					<div class="steps-container">
+						<h2>Our Work Process</h2>
+						<span class="bottom-border"></span>
+
+						<!-- Step 1: Planning -->
+						<div class="step">
+							<div class="step-image">
+								<img
+									src="/assets/services/about.png"
+									alt="Research & Planning"
+								/>
+							</div>
+							<div class="step-content">
+								<h3>
+									<span class="step-content-span">Step 1:</span> Ideation and
+									Planning
+								</h3>
+								<p>
+									<strong>Brainstorming:</strong> Generate and refine app ideas.
+								</p>
+								<p>
+									<strong>Market Research:</strong> Analyze competitors and
+									identify target audience needs.
+								</p>
+								<p>
+									<strong>Define Objectives:</strong> Set clear goals and
+									requirements for the app.
+								</p>
+							</div>
+						</div>
+
+						<!-- Step 2: System Design -->
+						<div class="step">
+							<div class="step-image">
+								<img src="/assets/services/about.png" alt="Design" />
+							</div>
+							<div class="step-content">
+								<h3><span class="step-content-span">Step 2:</span> Design</h3>
+								<p>
+									<strong>Wireframing:</strong> Create a blueprint of the app’s
+									layout and structure.
+								</p>
+								<p>
+									<strong>UI/UX Design:</strong> Design the user interface and
+									user experience to ensure the app is intuitive and engaging.
+								</p>
+							</div>
+						</div>
+
+						<!-- Step 3: Development -->
+						<div class="step">
+							<div class="step-image">
+								<img src="/assets/services/about.png" alt="Development" />
+							</div>
+							<div class="step-content">
+								<h3>
+									<span class="step-content-span">Step 3:</span> Development
+								</h3>
+								<p>
+									<strong>Front-end Development:</strong> Code the client-side
+									of the app, focusing on the user interface and interactions.
+								</p>
+								<p>
+									<strong>Back-end Development:</strong> Develop the server-side
+									logic, database, and APIs.
+								</p>
+							</div>
+						</div>
+
+						<!-- Step 4: Testing -->
+						<div class="step">
+							<div class="step-image">
+								<img src="/assets/services/about.png" alt="Testing" />
+							</div>
+							<div class="step-content">
+								<h3><span class="step-content-span">Step 4:</span> Testing</h3>
+								<p>
+									<strong>Functional Testing:</strong> Ensure all features work
+									as intended.
+								</p>
+								<p>
+									<strong>Usability Testing:</strong> Verify the app is
+									user-friendly.
+								</p>
+								<p>
+									<strong>Performance Testing:</strong> Check the app’s speed,
+									responsiveness, and stability.
+								</p>
+							</div>
+						</div>
+
+						<!-- Step 5: Deployment -->
+						<div class="step">
+							<div class="step-image">
+								<img src="/assets/services/about.png" alt="Deployment" />
+							</div>
+							<div class="step-content">
+								<h3>
+									<span class="step-content-span">Step 5:</span> Deployment
+								</h3>
+								<p>
+									<strong>App Store Submission:</strong> Prepare and submit the
+									app to app stores (Google Play, Apple App Store).
+								</p>
+								<p>
+									<strong>Beta Testing:</strong> Release a beta version to a
+									select group of users for feedback.
+								</p>
+							</div>
+						</div>
+
+						<!-- Step 6: Maintenance -->
+						<div class="step">
+							<div class="step-image">
+								<img src="/assets/services/about.png" alt="Launch" />
+							</div>
+							<div class="step-content">
+								<h3><span class="step-content-span">Step 6:</span> Launch</h3>
+								<p>
+									<strong>Marketing:</strong> Promote the app through various
+									channels to reach your target audience.
+								</p>
+								<p>
+									<strong>Monitoring:</strong> Track the app’s performance and
+									user feedback post-launch.
+								</p>
+							</div>
+						</div>
+
+						<!-- Step 7: Evaluation -->
+						<div class="step">
+							<div class="step-image">
+								<img
+									src="/assets/services/about.png"
+									alt="Maintenance and Updates"
+								/>
+							</div>
+							<div class="step-content">
+								<h3>
+									<span class="step-content-span">Step 7:</span> Maintenance and
+									Updates
+								</h3>
+								<p>
+									<strong>Bug Fixes:</strong> Address any issues that arise
+									after launch.
+								</p>
+								<p>
+									<strong>Feature Enhancements:</strong> Continuously improve
+									the app by adding new features and updates.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Contact Section -->
+				<section class="contact" id="contact">
+					<div class="container">
+						<h2>Contact Us</h2>
+						<div class="contact-info">
+							<div class="contact-details">
+								<h3>Get in Touch</h3>
+								<br />
+								<p>
+									Have questions or need assistance? Feel free to reach out to
+									us through the following channels:
+								</p>
+								<br />
+								<ul>
+									<li>
+										<strong>Address:</strong> Diepkloof Zone 6, Soweto, South
+										Africa
+									</li>
+									<li>
+										<strong>Email:</strong>
+										<a href="mailto:info@webify.org.za">info@webify.org.za</a>
+									</li>
+									<li>
+										<strong>Phone:</strong>
+										<a href="tel:0645584110">+27 64 588 4110</a>
+									</li>
+								</ul>
+							</div>
+							<div class="contact-form">
+								<h3>Send Us a Message</h3>
+								<form action="/php/submit-form.php" method="POST">
+									<!-- Honeypot -->
+									<input name="bot-field" style="display: none" />
+									<input type="text" name="_honey" style="display: none" />
+
+									<!-- Form -->
+									<div class="form-group">
+										<label for="name">Name:</label>
+										<input type="text" id="name" name="name" required />
+									</div>
+									<div class="form-group">
+										<label for="email">Email:</label>
+										<input
+											type="email"
+											id="email"
+											name="email"
+											required
+											pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+											title="Please enter a valid email address."
+										/>
+									</div>
+									<div class="form-group">
+										<label for="message">Message:</label>
+										<textarea
+											id="message"
+											name="message"
+											rows="4"
+											required
+										></textarea>
+									</div>
+									<button type="submit" class="cta-btn">Send Message</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<!-- Footer Section -->
+			<footer class="footer">
+				<div class="footer-container">
+					<div class="footer-content">
+						<div class="box">
+							<div class="footer-logo">
+								<h1>Webify</h1>
+								<p>Your partner in innovative web solutions</p>
+							</div>
+						</div>
+						<div class="box">
+							<div class="footer-links">
+								<h3>Quick Links</h3>
+								<ul>
+									<li><a href="/">Home</a></li>
+									<li><a href="/index.html#about">About</a></li>
+									<li><a href="/index.html#services">Services</a></li>
+									<li><a href="/index.html#portfolio">Portfolio</a></li>
+									<li><a href="#">Blog</a></li>
+									<li><a href="/index.html#contact">Contact</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="box">
+							<div class="footer-policy">
+								<h3>Legal</h3>
+								<ul>
+									<li>
+										<a href="/views/privacy-policy.html">Privacy Policy</a>
+									</li>
+									<li>
+										<a href="/views/terms-of-service.html">Terms of Service</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="footer-bottom">
+						<p>&copy; 2024 Webify. All rights reserved.</p>
+					</div>
+				</div>
+			</footer>
+
+			<!-- Scroll to Top Button -->
+			<button id="scrollToTopBtn" class="scroll-to-top">
+				<i class="bx bx-up-arrow-alt"></i>
+			</button>
+
+			<!-- Quick Contact Button -->
+			<button id="quickContactBtn" class="quick-contact-btn">
+				<span>Contact Us</span>
+			</button>
+
+			<!-- WhatsApp Button -->
+			<div id="whatsAppBtn" class="whatsapp-btn">
+				<a href="https://wa.me/27645584110" target="_blank">
+					<i class="bx bxl-whatsapp"></i>
+				</a>
+			</div>
+
+			<!-- Popup Form -->
+			<div id="popupForm" class="popup-overlay">
+				<div class="popup-content">
+					<button id="closePopup" class="close-popup">&times;</button>
+					<h2>Quick Contact</h2>
+					<form id="contactForm" action="/php/submit-form.php" method="POST">
+						<div class="form-group">
+							<label for="name">Name:</label>
+							<input type="text" id="name" name="name" required />
+						</div>
+						<div class="form-group">
+							<label for="email">Email:</label>
+							<input
+								type="email"
+								id="email"
+								name="email"
+								required
+								pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+								title="Please enter a valid email address."
+							/>
+						</div>
+						<div class="form-group">
+							<label for="message">Message:</label>
+							<textarea
+								id="message"
+								name="message"
+								rows="4"
+								required
+							></textarea>
+						</div>
+						<button type="submit" class="cta-btn">Send Message</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<script src="/js/main.js"></script>
+	</body>
+</html>
