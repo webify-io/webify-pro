@@ -281,7 +281,7 @@ body.dark-mode .form-group label,
 body.dark-mode .contact-details ul li,
 body.dark-mode .popup-content h2,
 body.dark-mode .process-step h2,
-body.dark-mode .service h2,
+/* body.dark-mode .service h2, */
 /* body.dark-mode .terms h2, */
 /* body.dark-mode .privacy-policy h2, */
 body.dark-mode .tech-category h2,
@@ -1835,7 +1835,7 @@ body.dark-mode .main .about h2 {
 @media (max-width: 768px) {
 	/* Hero Section */
 	.hero {
-		/* background-image: none; */
+		background-image: none;
 		padding-top: 2rem;
 	}
 
@@ -1906,6 +1906,10 @@ body.dark-mode .main .about h2 {
 		align-content: center;
 	} */
 
+	.portfolio-category h2,
+	.service h2,
+	.terms h2,
+	.privacy-policy h2,
 	.main .about-text h2,
 	.main .services h2,
 	.development-steps h2,
@@ -1988,6 +1992,52 @@ body.dark-mode .main .about h2 {
 	.whatsapp-btn a i {
 		font-size: 2rem;
 	}
+}
+
+@media (max-width: 412px) {
+	.container {
+		padding: 0.75rem 0 0;
+	}
+	.header {
+		height: 65px;
+	}
+	.header .container {
+		padding: 0.85rem;
+	}
+	.nav {
+		top: 65px;
+	}
+	.nav__list {
+		padding: 0.5rem 0 0;
+	}
+	.about {
+		padding: 4.5rem 1.25rem 2rem;
+	}
+	.main .container {
+		padding: 2rem 0;
+	}
+	.main .steps-container {
+		padding: 2rem 0 0;
+	}
+	.main .services {
+		padding: 0 1.25rem;
+	}
+	.main .about {
+		padding: 0 1.25rem;
+	}
+	.main .contact {
+		padding: 0 1rem 2rem;
+	}
+	.title-header {
+		padding: 3.85rem 1.25rem 0;
+	}
+	.views-top-margin {
+		margin-top: 3.5rem;
+	}
+
+	/* .main .about {
+		padding: 5.75rem 1.25rem 0;
+	} */
 }
 
 /* Styles for the hamburger bar when toggled */
