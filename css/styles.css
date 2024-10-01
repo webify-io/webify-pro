@@ -202,6 +202,7 @@ body.dark-mode .theme-toggle-btn .moon {
 	display: none;
 }
 
+body.dark-mode hr,
 body.dark-mode .bar,
 body.dark-mode .main .bottom-border {
 	background-color: #d3d3d3;
@@ -779,14 +780,20 @@ body.dark-mode .main .about h2 {
 .technology {
 	min-height: unset;
 	margin: 2rem 0;
+	/* border-top: 2px solid;
+	border-bottom: 2px solid; */
+	/* transform: rotate(3.3deg); */
 }
 /* Swiper Container - Technology */
 /* Set a specific height for the swiper-container */
 .swiper-container {
 	height: auto;
-	padding: 0;
+	/* padding: 0.1rem 0; */
 	width: 100%; /* Full width */
 	position: relative; /* Ensure buttons and pagination are positioned correctly */
+	justify-content: center;
+	align-items: center;
+	/* background-color: #cadff0; */
 }
 
 /* Ensure the swiper-slide takes up the full height */
@@ -799,16 +806,26 @@ body.dark-mode .main .about h2 {
 	-moz-user-select: none; /* Firefox */
 	-ms-user-select: none; /* Internet Explorer/Edge */
 	user-select: none; /* Non-prefixed version for modern browsers */
-
 	pointer-events: none; /* Disable pointer events to prevent clicking or interaction */
 }
 
-/* Ensure the image adjusts within the parent container */
-.swiper-slide-technology img {
-	max-height: 100%; /* Ensure image doesn't exceed container height */
-	max-width: 100%; /* Ensure image doesn't exceed container width */
-	object-fit: contain; /* Keep the aspect ratio of the image */
-	width: 3em;
+.tech-img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%; /* Ensure the container takes the full height of the slide */
+}
+
+.swiper-slide-technology {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.tech-img img {
+	width: 3.5em;
+	height: 3.5em;
+	object-fit: scale-down;
 }
 
 /* Adjust the Swiper buttons if needed to fit within the 5em height */
@@ -1697,6 +1714,14 @@ body.dark-mode .main .about h2 {
 	text-decoration: none;
 }
 
+hr {
+	border: none;
+	height: 2px;
+	background-color: #000; /* Change color */
+	width: 80%; /* Adjust width */
+	margin: 20px auto; /* Center and add space around */
+}
+
 /* ========= SCROLL BAR ========== */
 ::-webkit-scrollbar {
 	width: 0.6rem;
@@ -1864,8 +1889,9 @@ body.dark-mode .main .about h2 {
 		padding: 3.5rem 1rem;
 	} */
 
-	.swiper-slide-technology img {
+	.tech-img img {
 		width: 2.5em;
+		height: 2.5em;
 	}
 
 	/* Swiper - Testimonials */
@@ -2015,6 +2041,9 @@ body.dark-mode .main .about h2 {
 	}
 	.about {
 		padding: 4.5rem 1.25rem 2rem;
+	}
+	.contact-hr {
+		display: none;
 	}
 	.main .container {
 		padding: 2rem 0;
