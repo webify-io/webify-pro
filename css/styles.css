@@ -1664,7 +1664,8 @@ body.dark-mode .main .about h2 {
 	gap: 20px;
 }
 .success-container h2 {
-	margin: 0;
+	font-size: 2rem;
+	color: #333;
 }
 .success-container img {
 	padding: 0;
@@ -1907,6 +1908,7 @@ body.dark-mode .main .about h2 {
 		align-content: center;
 	} */
 
+	.success-container h2,
 	.portfolio-category h2,
 	.service h2,
 	.terms h2,
