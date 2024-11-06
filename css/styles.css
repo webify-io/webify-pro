@@ -1404,6 +1404,11 @@ body.dark-mode .main .about h2 {
 	color: #00a8ff; /* Blue color */
 }
 
+.terms h3 {
+	margin: 20px 0 10px;
+	color: #00a8ff; /* Blue color */
+}
+
 .terms p {
 	margin: 0 0 20px;
 	line-height: 1.6;
