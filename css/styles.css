@@ -1672,8 +1672,10 @@ body.dark-mode .main .about h2 {
 .step-content li,
 .products-text li {
 	margin-left: 2rem;
+	line-height: 1.6rem;
 	list-style: disc;
 }
+
 /* Success Page */
 .success-container {
 	display: flex;
