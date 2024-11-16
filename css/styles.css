@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baumans&display=swap'); /* logo font */
 
 :root {
 	--clr-text: rgba(0, 0, 0, 1); /* Black: #000 */
@@ -167,9 +168,9 @@ section:nth-of-type(even) {
 
 /* Dark Mode Styles */
 body.dark-mode .header {
-	background-color: #333; /* Dark background */
-	color: #fff; /* Light text */
-	border-bottom: 1px solid #444; /* Darker border */
+	background-color: #333;
+	color: #fff;
+	border-bottom: 1px solid #444;
 }
 
 body.dark-mode .header .cta__button {
@@ -181,17 +182,17 @@ body.dark-mode .header .cta__button:hover {
 }
 
 body.dark-mode .header .logoName {
-	color: #00a8ff; /* Light text */
+	color: #00a8ff;
 }
 body.dark-mode .nav__link {
-	color: #fff; /* Light text */
+	color: #fff;
 }
 body.dark-mode .nav__link:hover {
 	color: #00a8ff;
 }
 
 body.dark-mode .theme-toggle-btn {
-	color: #fff; /* Light text */
+	color: #fff;
 }
 
 body.dark-mode .theme-toggle-btn .sun {
@@ -352,7 +353,7 @@ body.dark-mode .main .about h2 {
 	margin: 0 auto;
 	justify-content: space-between;
 	align-items: center;
-	padding: 1.25rem;
+	padding: 0.5rem;
 }
 
 /* Logo Styling */
@@ -361,15 +362,16 @@ body.dark-mode .main .about h2 {
 	position: relative;
 	cursor: default;
 	align-items: center;
+	justify-content: center;
 	/* opacity: 0; */
 	animation: slideRight 1s ease forwards;
 }
 .logo img {
-	width: 35px;
-	transform: rotate(-20deg);
+	width: 7.813rem;
+	/* transform: rotate(-20deg); */
 	/* border-radius: 50%; */
 }
-.logo a {
+/* .logo a {
 	font-family: 'DM Sans', sans-serif;
 	font-size: 1.5rem;
 	font-weight: bolder;
@@ -377,7 +379,7 @@ body.dark-mode .main .about h2 {
 	color: #000;
 	text-decoration: none;
 	padding-left: 0.2rem;
-}
+} */
 
 /* Navigation Menu Styling */
 /* .nav {
@@ -2102,7 +2104,7 @@ hr {
 		height: 65px;
 	}
 	.header .container {
-		padding: 0.85rem;
+		padding: 0;
 	}
 	.nav {
 		top: 65px;
