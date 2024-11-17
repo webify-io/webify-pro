@@ -13,10 +13,14 @@
 	/* --clr-background: rgba(249, 250, 251, 1); */ /* Light grey background: #f9fafb */
 	--clr-background: #f8f8ff; /* Ghost White: #F8F8FF */
 	--clr-background-alt: rgba(247, 245, 250, 1); /* White: #fff */
-	--clr-background-cards: rgba(249, 249, 255, 1);
+	/* --clr-background-cards: rgba(249, 249, 255, 1); */
+	--clr-background-cards: #fefafe;
+	/* --clr-background-cards: #f8fafd; */
 }
 
-/* CSS Reset: Reset some default browser styles */
+/* ************************************************** */
+
+/* CSS Reset: */
 /* 1. Use a more-intuitive box-sizing model.*/
 *,
 *::before,
@@ -92,6 +96,8 @@ article {
 	container-type: inline-size;
 }
 
+/* ************************************************** */
+
 /* Custom CSS */
 section {
 	min-height: 100svh;
@@ -165,6 +171,8 @@ section:nth-of-type(even) {
 .theme-toggle-btn .sun:hover {
 	color: #f39c12;
 }
+
+/* ************************************************** */
 
 /* Dark Mode Styles */
 body.dark-mode .header {
@@ -250,6 +258,10 @@ body.dark-mode::-webkit-scrollbar-thumb:hover {
 	color: #d2d2d2;
 }
 
+body.dark-mode .logo img {
+	filter: invert(1) hue-rotate(180deg);
+}
+
 body.dark-mode h1,
 body.dark-mode h2,
 body.dark-mode h3,
@@ -284,6 +296,7 @@ body.dark-mode .form-group label,
 body.dark-mode .contact-details ul li,
 body.dark-mode .popup-content h2,
 body.dark-mode .process-step h2,
+body.dark-mode .step-content ul,
 /* body.dark-mode .service h2, */
 /* body.dark-mode .terms h2, */
 /* body.dark-mode .privacy-policy h2, */
@@ -336,6 +349,8 @@ body.dark-mode .main .about h2 {
 	color: #00a8ff;
 }
 
+/* ************************************************** */
+
 /* Header Styling */
 .header {
 	background-color: var(--clr-background-alt);
@@ -366,6 +381,15 @@ body.dark-mode .main .about h2 {
 	/* opacity: 0; */
 	animation: slideRight 1s ease forwards;
 }
+@keyframes slideRight {
+	0% {
+		transform: translateX(-200%);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
 .logo img {
 	width: 7.813rem;
 	/* transform: rotate(-20deg); */
@@ -765,7 +789,7 @@ body.dark-mode .main .about h2 {
 	font-weight: 400;
 	white-space: normal;
 	text-wrap: wrap;
-	letter-spacing: 0.05em;
+	letter-spacing: 0.03rem;
 	/* line-height: 1.4; */
 	/* word-spacing: 5px; */
 }
@@ -795,11 +819,11 @@ body.dark-mode .main .about h2 {
 }
 
 .swiper-slide-testimonials p {
-	font-size: 1.3em;
-	color: #666; /* Medium grey text */
+	font-size: 1.2rem;
+	color: #555; /* Medium grey text */
 	line-height: 1.6;
 	margin-bottom: 20px;
-	font-style: italic;
+	/* font-style: italic; */
 }
 
 .client-info {
@@ -1732,6 +1756,14 @@ body.dark-mode .main .about h2 {
 	font-size: 1.1em;
 	color: #555;
 	line-height: 1.6;
+}
+
+.step-content ul {
+	color: #555;
+}
+
+.step-content .list-style-circle li {
+	list-style-type: circle;
 }
 
 .step-content li,
