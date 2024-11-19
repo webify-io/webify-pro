@@ -379,15 +379,6 @@ body.dark-mode .main .about h2 {
 	align-items: center;
 	justify-content: center;
 	/* opacity: 0; */
-	animation: slideRight 1s ease forwards;
-}
-@keyframes slideRight {
-	0% {
-		transform: translateX(-200%);
-	}
-	100% {
-		transform: translateX(0);
-	}
 }
 
 .logo img {
@@ -1713,6 +1704,7 @@ body.dark-mode .main .about h2 {
 	opacity: 0;
 	visibility: hidden;
 	transition: all 1.6s ease-in-out;
+	position: relative;
 }
 
 .step:nth-child(even) {
@@ -1757,13 +1749,12 @@ body.dark-mode .main .about h2 {
 	color: #555;
 	line-height: 1.6;
 }
-
 .step-content ul {
 	color: #555;
 }
-
 .step-content .list-style-circle li {
 	list-style-type: circle;
+	color: #555;
 }
 
 .step-content li,
@@ -1771,6 +1762,16 @@ body.dark-mode .main .about h2 {
 	margin-left: 2rem;
 	line-height: 1.5rem;
 	list-style: disc;
+}
+
+.step-content .step-info a {
+	font-size: 0.675rem;
+	color: #b9b9b9;
+	position: absolute;
+	bottom: 10%;
+}
+.step-content .step-info a:hover {
+	color: #00a8ff;
 }
 
 /* Success Page */
@@ -2079,6 +2080,12 @@ hr {
 	/* .step-content {
 		padding-left: 0;
 	} */
+	.step-content .step-info {
+		padding-top: 1rem;
+	}
+	.step-content .step-info a {
+		bottom: 2%;
+	}
 
 	/* Swiper - Portfolio */
 	.portfolio-page {
