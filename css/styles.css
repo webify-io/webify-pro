@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baumans&display=swap'); /* logo font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'); /* Heeder font */
 
 :root {
 	--clr-text: rgba(0, 0, 0, 1); /* Black: #000 */
@@ -261,6 +262,9 @@ body.dark-mode::-webkit-scrollbar-thumb:hover {
 body.dark-mode .logo img {
 	filter: invert(1) hue-rotate(180deg);
 }
+body.dark-mode .tech-img {
+	background: #e2e8f0; /* color-neutral-200 */
+}
 
 body.dark-mode h1,
 body.dark-mode h2,
@@ -419,7 +423,12 @@ body.dark-mode .main .about h2 {
 }
 
 .nav__link {
-	font-size: 1.025rem;
+	/* font-size: 1.025rem; */
+	font-size: 15px;
+	font-weight: 600;
+	font-family: 'Inter', 'Roboto', 'Baumans';
+	font-optical-sizing: auto;
+	font-style: normal;
 	color: #000;
 	/* font-weight: 500; */
 	transition: color 0.3s ease;
@@ -888,8 +897,12 @@ body.dark-mode .main .about h2 {
 	align-items: center;
 	height: 100%; /* Ensure the container takes the full height of the slide */
 	/* background-color: #cbd5e1; */ /* color-neutral-300 */
-	background-color: #e2e8f0; /* color-neutral-200 */
-	/* background-color: #f1f5f9; */ /* color-neutral-100 */
+	/* background-color: #e2e8f0; */ /* color-neutral-200 */
+	background: radial-gradient(
+		73.48% 109.2% at 26.56% -25.19%,
+		#fafdff 0,
+		#e8ecff 100%
+	);
 	padding: 1.5rem 4rem;
 	min-height: 75px;
 	/* padding: 24px 32px; */
@@ -906,7 +919,8 @@ body.dark-mode .main .about h2 {
 	width: 3.5em;
 	height: 3.5em;
 	object-fit: scale-down;
-	filter: grayscale(100%);
+	/* filter: grayscale(100%); */
+	filter: grayscale(100%) brightness(70%) invert(1);
 }
 
 /* Adjust the Swiper buttons if needed to fit within the 5em height */
@@ -1162,6 +1176,7 @@ body.dark-mode .main .about h2 {
 .footer-bottom p {
 	font-size: 0.9em;
 	color: #999; /* Light grey text */
+	text-transform: capitalize;
 }
 
 /* Scroll to Top Button */
