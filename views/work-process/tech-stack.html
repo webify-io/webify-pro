@@ -1,389 +1,387 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!-- SEO - meta<tags> for search engine optimisation -->
-		<!-- Additional Meta Tags -->
-		<meta name="robots" content="index, follow" />
+  <head>
+    <!-- SEO - meta<tags> for search engine optimisation -->
+    <!-- Additional Meta Tags -->
+    <meta name="robots" content="index, follow" />
 
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<title>Tech Stack - Webify</title>
-		<!-- Primary Meta Tags -->
-		<meta
-			name="description"
-			content="We use modern front-end technologies to build responsive and interactive user interfaces."
-		/>
-		<!-- Keywords Meta Tag -->
-		<meta
-			name="keywords"
-			content="Webify, webify, web, webify web solutions, webify solutions, web solutions, software, tech, technology, software development, mobile development, seo, search engine optimization, web development johannesburg, web development south africa, cheap websites, affordable websites, easy websites, simple websites, web development, website design, e-commerce solutions, custom web applications, user experience design, responsive web design, webify, digital transformation, business website, web development company, Website Optimization, website Consultation, API Development, Backend Development, UI/UX Design"
-		/>
+    <title>Tech Stack - Webify</title>
+    <!-- Primary Meta Tags -->
+    <meta
+      name="description"
+      content="We use modern front-end technologies to build responsive and interactive user interfaces."
+    />
+    <!-- Keywords Meta Tag -->
+    <meta
+      name="keywords"
+      content="Webify, webify, web, webify web solutions, webify solutions, web solutions, software, tech, technology, software development, mobile development, seo, search engine optimization, web development johannesburg, web development south africa, cheap websites, affordable websites, easy websites, simple websites, web development, website design, e-commerce solutions, custom web applications, user experience design, responsive web design, webify, digital transformation, business website, web development company, Website Optimization, website Consultation, API Development, Backend Development, UI/UX Design"
+    />
 
-		<!-- Favicon Icons [Branding in tabs]  -->
-		<!-- Standard favicon - For modern browsers -->
-		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <!-- Favicon Icons [Branding in tabs]  -->
+    <!-- Standard favicon - For modern browsers -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
-		<!-- For IE 10 and below -->
-		<link rel="shortcut icon" href="/favicon.ico" />
-		<!-- For PNG favicons -->
-		<link
-			rel="icon"
-			sizes="any"
-			type="image/png"
-			href="/web-app-manifest-192x192.png"
-		/>
+    <!-- For IE 10 and below -->
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <!-- For PNG favicons -->
+    <link
+      rel="icon"
+      sizes="any"
+      type="image/png"
+      href="/web-app-manifest-192x192.png"
+    />
 
-		<!-- For iOS - 180x180px -->
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-		<meta name="apple-mobile-web-app-title" content="Webify" />
+    <!-- For iOS - 180x180px -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Webify" />
 
-		<!-- SVG favicon -->
-		<link rel="icon" type="image/svg+xml" href="/favicon.ico/favicon.svg" />
+    <!-- SVG favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico/favicon.svg" />
 
-		<!-- 32x32 and 16x16 pixel icons for general use -->
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <!-- 32x32 and 16x16 pixel icons for general use -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 
-		<!-- 96x96 pixel icon -->
-		<link
-			rel="icon"
-			type="image/png"
-			href="/favicon.ico/favicon-96x96.png"
-			sizes="96x96"
-		/>
+    <!-- 96x96 pixel icon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="/favicon.ico/favicon-96x96.png"
+      sizes="96x96"
+    />
 
-		<!-- Web App Manifest -->
-		<link rel="manifest" href="/site.webmanifest" />
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/site.webmanifest" />
 
-		<!-- Favicon Icons - Branding in tabs and Bookmarks -->
-		<meta name="msapplication-TileColor" content="#ffc40d" />
-		<meta name="theme-color" content="#5bbad5" />
+    <!-- Favicon Icons - Branding in tabs and Bookmarks -->
+    <meta name="msapplication-TileColor" content="#ffc40d" />
+    <meta name="theme-color" content="#5bbad5" />
 
-		<!-- Link Swiper's CSS -->
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-		/>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
-		<!-- boxicons stylesheet for icons-->
-		<link
-			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-			rel="stylesheet"
-		/>
+    <!-- boxicons stylesheet for icons-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
-		<!-- Link to external CSS -->
-		<link rel="stylesheet" href="/css/styles.css" />
-	</head>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
 
-	<body>
-		<!-- Loader -->
-		<div id="loader" class="loader">
-			<div class="loader-spinner"></div>
-		</div>
+  <body onload="todayDate()">
+    <!-- Loader -->
+    <div id="loader" class="loader">
+      <div class="loader-spinner"></div>
+    </div>
 
-		<!-- Main Content -->
-		<div id="content" class="content hidden">
-			<!-- Header Section -->
-			<header class="header">
-				<div class="container">
-					<!-- Logo -->
-					<div class="logo">
-						<a href="/index.html"
-							><img
-								src="/assets/favicon/webify-header-logo.png"
-								alt="Webify Company Logo"
-						/></a>
-					</div>
+    <!-- Main Content -->
+    <div id="content" class="content hidden">
+      <!-- Header Section -->
+      <header class="header">
+        <div class="container">
+          <!-- Logo -->
+          <div class="logo">
+            <a href="/"><span class="double-outline">W</span>ebify</a>
+          </div>
 
-					<!-- Navigation Menu -->
-					<nav class="nav">
-						<ul class="nav__list">
-							<li class="nav__item">
-								<a href="/" class="nav__link">Home</a>
-							</li>
-							<li class="nav__item">
-								<a href="/index.html#about" class="nav__link">About</a>
-							</li>
-							<li class="nav__item nav__dropdown">
-								<a href="/index.html#services" class="nav__link"
-									>Services <span class="caret">&#9662;</span></a
-								>
-								<ul class="nav__submenu">
-									<li class="nav__submenu-item">
-										<a
-											href="/views/services/website-development.html"
-											class="nav__link"
-											>Website Development</a
-										>
-									</li>
-									<li class="nav__submenu-item">
-										<a
-											href="/views/services/custom-website-development.html"
-											class="nav__link"
-											>Custom Software Development</a
-										>
-									</li>
-									<li class="nav__submenu-item">
-										<a
-											href="/views/services/mobile-application-development.html"
-											class="nav__link"
-											>Android & IOS App Development</a
-										>
-									</li>
-									<li class="nav__submenu-item">
-										<a
-											href="/views/services/website-hosting-maintenance-services.html"
-											class="nav__link"
-											>Website Hosting & Maintenance Services</a
-										>
-									</li>
-									<li class="nav__submenu-item">
-										<a
-											href="/views/services/application-maintenance-and-support.html"
-											class="nav__link"
-											>Application Maintenance & Support</a
-										>
-									</li>
-									<li class="nav__submenu-item">
-										<a
-											href="/views/services/seo-integration.html"
-											class="nav__link"
-											>SEO Integration & Web Design</a
-										>
-									</li>
-								</ul>
-							</li>
-							<li class="nav__item">
-								<a href="/index.html#portfolio" class="nav__link">Portfolio</a>
-							</li>
-							<li class="nav__item">
-								<a href="/index.html#blog" class="nav__link">Blog</a>
-							</li>
-							<li class="nav__item nav__dropdown">
-								<a
-									href="/views/work-process/work-process.html"
-									class="nav__link"
-								>
-									Work Process <span class="caret">&#9662;</span>
-								</a>
-								<ul class="nav__submenu">
-									<li class="nav__submenu-item">
-										<a
-											href="/views/work-process/services.html"
-											class="nav__link"
-											>Services</a
-										>
-									</li>
-									<li class="nav__submenu-item">
-										<a
-											href="/views/work-process/packages.html"
-											class="nav__link"
-											>Packages</a
-										>
-									</li>
-									<li class="nav__submenu-item">
-										<a href="#" class="nav__link">Tech Stack</a>
-									</li>
-									<li class="nav__submenu-item">
-										<a
-											href="/views/work-process/work-process.html"
-											class="nav__link"
-											>Work Process</a
-										>
-									</li>
-								</ul>
-							</li>
-							<li class="nav__item">
-								<a href="/index.html#contact" class="nav__link">Contact</a>
-							</li>
-						</ul>
-					</nav>
+          <!-- Navigation Menu -->
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="/" class="nav__link">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="/index.html#about" class="nav__link">About</a>
+              </li>
+              <li class="nav__item nav__dropdown">
+                <a href="/index.html#services" class="nav__link"
+                  >Services <span class="caret">&#9662;</span></a
+                >
+                <ul class="nav__submenu">
+                  <li class="nav__submenu-item">
+                    <a
+                      href="/views/services/website-development.html"
+                      class="nav__link"
+                      >Website Development</a
+                    >
+                  </li>
+                  <li class="nav__submenu-item">
+                    <a
+                      href="/views/services/custom-website-development.html"
+                      class="nav__link"
+                      >Custom Software Development</a
+                    >
+                  </li>
+                  <li class="nav__submenu-item">
+                    <a
+                      href="/views/services/mobile-application-development.html"
+                      class="nav__link"
+                      >Android & IOS App Development</a
+                    >
+                  </li>
+                  <li class="nav__submenu-item">
+                    <a
+                      href="/views/services/website-hosting-maintenance-services.html"
+                      class="nav__link"
+                      >Website Hosting & Maintenance Services</a
+                    >
+                  </li>
+                  <li class="nav__submenu-item">
+                    <a
+                      href="/views/services/application-maintenance-and-support.html"
+                      class="nav__link"
+                      >Application Maintenance & Support</a
+                    >
+                  </li>
+                  <li class="nav__submenu-item">
+                    <a
+                      href="/views/services/seo-integration.html"
+                      class="nav__link"
+                      >SEO Integration & Web Design</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav__item">
+                <a href="/index.html#portfolio" class="nav__link">Portfolio</a>
+              </li>
+              <li class="nav__item">
+                <a href="/index.html#blog" class="nav__link">Blog</a>
+              </li>
+              <li class="nav__item nav__dropdown">
+                <a
+                  href="/views/work-process/work-process.html"
+                  class="nav__link"
+                >
+                  Work Process <span class="caret">&#9662;</span>
+                </a>
+                <ul class="nav__submenu">
+                  <li class="nav__submenu-item">
+                    <a
+                      href="/views/work-process/services.html"
+                      class="nav__link"
+                      >Services</a
+                    >
+                  </li>
+                  <li class="nav__submenu-item">
+                    <a
+                      href="/views/work-process/packages.html"
+                      class="nav__link"
+                      >Packages</a
+                    >
+                  </li>
+                  <li class="nav__submenu-item">
+                    <a href="#" class="nav__link">Tech Stack</a>
+                  </li>
+                  <li class="nav__submenu-item">
+                    <a
+                      href="/views/work-process/work-process.html"
+                      class="nav__link"
+                      >Work Process</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav__item">
+                <a href="/index.html#contact" class="nav__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
 
-					<!-- Light/Dark Button -->
-					<button id="themeToggle" class="theme-toggle-btn">
-						<span class="sun">&#9728;</span>
-						<span class="moon">&#9790;</span>
-					</button>
+          <!-- Light/Dark Button -->
+          <button id="themeToggle" class="theme-toggle-btn">
+            <span class="sun">&#9728;</span>
+            <span class="moon">&#9790;</span>
+          </button>
 
-					<!-- CTA Button -->
-					<div class="cta">
-						<a href="/index.html#contact" class="cta__button"
-							>Get a Free Quote</a
-						>
-					</div>
+          <!-- CTA Button -->
+          <div class="cta">
+            <a href="/index.html#contact" class="cta__button"
+              >Get a Free Quote</a
+            >
+          </div>
 
-					<!-- Mobile Menu Toggle (Optional) -->
-					<div class="mobile-menu">
-						<span class="bar"></span>
-						<span class="bar"></span>
-						<span class="bar"></span>
-					</div>
-				</div>
-			</header>
+          <!-- Mobile Menu Toggle (Optional) -->
+          <div class="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </header>
 
-			<main class="main">
-				<div class="title-header">
-					<div class="container">
-						<h1>Our Tech Stack</h1>
-					</div>
-				</div>
-				<div class="container">
-					<section class="tech-stack">
-						<div class="tech-category front-end">
-							<h2>Front-End</h2>
-							<p>
-								We use modern front-end technologies to build responsive and
-								interactive user interfaces.
-							</p>
-							<ul>
-								<li>HTML5</li>
-								<li>CSS3</li>
-								<li>JavaScript</li>
-								<li>React</li>
-								<li>Vue.js</li>
-							</ul>
-						</div>
-						<div class="tech-category middleware">
-							<h2>Middleware</h2>
-							<p>
-								Our middleware solutions ensure smooth communication between the
-								front-end and back-end systems.
-							</p>
-							<ul>
-								<li>Node.js</li>
-								<li>Express.js</li>
-								<li>GraphQL</li>
-								<li>RabbitMQ</li>
-							</ul>
-						</div>
-						<div class="tech-category back-end">
-							<h2>Back-End</h2>
-							<p>
-								We use robust back-end technologies to build scalable and
-								efficient server-side applications.
-							</p>
-							<ul>
-								<li>Python</li>
-								<li>Django</li>
-								<li>Ruby on Rails</li>
-								<li>Java</li>
-								<li>Spring Boot</li>
-							</ul>
-						</div>
-						<div class="tech-category mobile">
-							<h2>Mobile</h2>
-							<p>
-								Our mobile development expertise allows us to create engaging
-								applications for both iOS and Android.
-							</p>
-							<ul>
-								<li>Swift</li>
-								<li>Kotlin</li>
-								<li>React Native</li>
-								<li>Flutter</li>
-							</ul>
-						</div>
-					</section>
-				</div>
-			</main>
+      <main class="main">
+        <div class="title-header">
+          <div class="container">
+            <h1>Our Tech Stack</h1>
+          </div>
+        </div>
+        <div class="container">
+          <section class="tech-stack">
+            <div class="tech-category front-end">
+              <h2>Front-End</h2>
+              <p>
+                We use modern front-end technologies to build responsive and
+                interactive user interfaces.
+              </p>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Vue.js</li>
+              </ul>
+            </div>
+            <div class="tech-category middleware">
+              <h2>Middleware</h2>
+              <p>
+                Our middleware solutions ensure smooth communication between the
+                front-end and back-end systems.
+              </p>
+              <ul>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>GraphQL</li>
+                <li>RabbitMQ</li>
+              </ul>
+            </div>
+            <div class="tech-category back-end">
+              <h2>Back-End</h2>
+              <p>
+                We use robust back-end technologies to build scalable and
+                efficient server-side applications.
+              </p>
+              <ul>
+                <li>Python</li>
+                <li>Django</li>
+                <li>Ruby on Rails</li>
+                <li>Java</li>
+                <li>Spring Boot</li>
+              </ul>
+            </div>
+            <div class="tech-category mobile">
+              <h2>Mobile</h2>
+              <p>
+                Our mobile development expertise allows us to create engaging
+                applications for both iOS and Android.
+              </p>
+              <ul>
+                <li>Swift</li>
+                <li>Kotlin</li>
+                <li>React Native</li>
+                <li>Flutter</li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </main>
 
-			<footer class="footer">
-				<div class="footer-container">
-					<div class="footer-content">
-						<div class="box">
-							<div class="footer-logo">
-								<h1>Webify</h1>
-								<p>Your partner in innovative web solutions</p>
-							</div>
-						</div>
-						<div class="box">
-							<div class="footer-links">
-								<h3>Quick Links</h3>
-								<ul>
-									<li><a href="/">Home</a></li>
-									<li><a href="/index.html#about">About</a></li>
-									<li><a href="/index.html#services">Services</a></li>
-									<li><a href="/index.html#portfolio">Portfolio</a></li>
-									<li><a href="#">Blog</a></li>
-									<li><a href="/index.html#contact">Contact</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="box">
-							<div class="footer-policy">
-								<h3>Legal</h3>
-								<ul>
-									<li>
-										<a href="/views/privacy-policy.html">Privacy Policy</a>
-									</li>
-									<li>
-										<a href="/views/terms-of-service.html">Terms of Service</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-content">
+            <div class="box">
+              <div class="footer-logo">
+                <h2>Webify</h2>
+                <p>Your partner in innovative web solutions</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/index.html#about">About</a></li>
+                  <li><a href="/index.html#services">Services</a></li>
+                  <li><a href="/index.html#portfolio">Portfolio</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="/index.html#contact">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="box">
+              <div class="footer-policy">
+                <h3>Legal</h3>
+                <ul>
+                  <li>
+                    <a href="/views/privacy-policy.html">Privacy Policy</a>
+                  </li>
+                  <li>
+                    <a href="/views/terms-of-service.html">Terms of Service</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-					<div class="footer-bottom">
-						<p>&copy; 2024 Webify. All rights reserved.</p>
-					</div>
-				</div>
-			</footer>
+          <div class="footer-bottom">
+            <p>&copy; <span id="date"></span> Webify. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
 
-			<!-- Scroll to Top Button -->
-			<button id="scrollToTopBtn" class="scroll-to-top">
-				<i class="bx bx-up-arrow-alt"></i>
-			</button>
+      <!-- Scroll to Top Button -->
+      <button id="scrollToTopBtn" class="scroll-to-top">
+        <i class="bx bx-up-arrow-alt"></i>
+      </button>
 
-			<!-- Quick Contact Button -->
-			<button id="quickContactBtn" class="quick-contact-btn">
-				<span>Contact Us</span>
-			</button>
+      <!-- Quick Contact Button -->
+      <button id="quickContactBtn" class="quick-contact-btn">
+        <span>Contact Us</span>
+      </button>
 
-			<!-- WhatsApp Button -->
-			<div id="whatsAppBtn" class="whatsapp-btn">
-				<a href="https://wa.me/27645584110" target="_blank">
-					<i class="bx bxl-whatsapp"></i>
-				</a>
-			</div>
+      <!-- WhatsApp Button -->
+      <div id="whatsAppBtn" class="whatsapp-btn">
+        <a href="https://wa.me/27615803040" target="_blank">
+          <i class="bx bxl-whatsapp"></i>
+        </a>
+      </div>
 
-			<!-- Popup Form -->
-			<div id="popupForm" class="popup-overlay">
-				<div class="popup-content">
-					<button id="closePopup" class="close-popup">&times;</button>
-					<h2>Quick Contact 👋</h2>
-					<form id="contactForm" action="/php/submit-form.php" method="POST">
-						<div class="form-group">
-							<label for="name">Name:</label>
-							<input type="text" id="name" name="name" required />
-						</div>
-						<div class="form-group">
-							<label for="email">Email:</label>
-							<input
-								type="email"
-								id="email"
-								name="email"
-								required
-								pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-								title="Please enter a valid email address."
-							/>
-						</div>
-						<div class="form-group">
-							<label for="message">Message:</label>
-							<textarea
-								id="message"
-								name="message"
-								rows="4"
-								required
-							></textarea>
-						</div>
-						<button type="submit" class="cta-btn">Send Message</button>
-					</form>
-				</div>
-			</div>
-		</div>
+      <!-- Popup Form -->
+      <div id="popupForm" class="popup-overlay">
+        <div class="popup-content">
+          <button id="closePopup" class="close-popup">&times;</button>
+          <h2>Quick Contact 👋</h2>
+          <form id="contactForm" action="/php/submit-form.php" method="POST">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                title="Please enter a valid email address."
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="cta-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
 
-		<script src="/js/main.js"></script>
-	</body>
+    <!-- custom js file link -->
+    <script src="/js/main.js"></script>
+    <script src="/js/todayDate.js"></script>
+  </body>
 </html>

@@ -71,7 +71,7 @@
 		<link rel="stylesheet" href="/css/styles.css" />
 	</head>
 
-	<body>
+	<body onload="todayDate()">
 		<!-- Loader -->
 		<div id="loader" class="loader">
 			<div class="loader-spinner"></div>
@@ -84,11 +84,7 @@
 				<div class="container">
 					<!-- Logo -->
 					<div class="logo">
-						<a href="/index.html"
-							><img
-								src="/assets/favicon/webify-header-logo.png"
-								alt="Webify Company Logo"
-						/></a>
+						<a href="/"><span class="double-outline">W</span>ebify</a>
 					</div>
 
 					<!-- Navigation Menu -->
@@ -223,13 +219,13 @@
 								<div class="social-buttons">
 									<!-- Call Button -->
 									<div class="social-call-btn">
-										<a href="tel:0645584110 target="_blank">
+										<a href="tel:0615803040 target="_blank">
 											<i class='bx bx-phone-call'></i>
 										</a>
 									</div>
 									<!-- WhatsApp Button -->
 									<div class="social-whatsapp-btn">
-										<a href="https://wa.me/27645584110" target="_blank">
+										<a href="https://wa.me/27615803040" target="_blank">
 											<i class="bx bxl-whatsapp"></i>
 										</a>
 									</div>
@@ -247,7 +243,7 @@
 				<div class="footer-content">
 					<div class="box">
 						<div class="footer-logo">
-							<h1>Webify</h1>
+							<h2>Webify</h2>
 							<p>Your partner in innovative web solutions</p>
 						</div>
 					</div>
@@ -276,7 +272,7 @@
 				</div>
 
 				<div class="footer-bottom">
-					<p>&copy; 2024 Webify. All rights reserved.</p>
+					<p>&copy; <span id="date"></span> Webify. All rights reserved.</p>
 				</div>
 			</div>
 		</footer>
@@ -293,7 +289,7 @@
 
 		<!-- WhatsApp Button -->
 		<div id="whatsAppBtn" class="whatsapp-btn">
-			<a href="https://wa.me/27645584110" target="_blank">
+			<a href="https://wa.me/27615803040" target="_blank">
 				<i class="bx bxl-whatsapp"></i>
 			</a>
 		</div>
@@ -330,6 +326,8 @@
 
 		</div>
 
+		<!-- custom js file link -->
 		<script src="/js/main.js"></script>
+		<script src="/js/todayDate.js"></script>
 	</body>
 </html>
