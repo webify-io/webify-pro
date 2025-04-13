@@ -53,11 +53,8 @@
     <meta name="msapplication-TileColor" content="#ffc40d" />
     <meta name="theme-color" content="#5bbad5" />
 
-    <!-- Link Swiper's CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    <!-- ------------ AOS Library ------------------------- -->
+    <link rel="stylesheet" href="/css/aos.css" />
 
     <!-- boxicons stylesheet for icons-->
     <link
@@ -334,7 +331,7 @@
         <hr />
 
         <!-- About Section -->
-        <section id="about" class="about header-style">
+        <section id="about" class="about">
           <div class="container">
             <div class="about-content">
               <div class="about-text">
@@ -367,7 +364,11 @@
           <div class="container">
             <h2>Contact Us</h2>
             <div class="contact-info">
-              <div class="contact-details">
+              <div
+                class="contact-details"
+                data-aos="zoom-in"
+                data-aos-delay="200"
+              >
                 <h3>Get in Touch</h3>
                 <br />
                 <p>
@@ -526,6 +527,9 @@
         </div>
       </div>
     </div>
+
+    <!-- ------------ AOS js Library  ------------------------- -->
+    <script src="/js/aos.js"></script>
 
     <!-- custom js file link -->
     <script src="/js/main.js"></script>

@@ -82,26 +82,6 @@ window.addEventListener('load', () => {
 });
 
 
-// Scroll animation for steps
-document.addEventListener('DOMContentLoaded', function () {
-	const steps = document.querySelectorAll('.step');
-
-	function checkScroll() {
-		steps.forEach((step) => {
-			const stepPosition = step.getBoundingClientRect().top;
-			const windowHeight = window.innerHeight;
-
-			if (stepPosition < windowHeight - 100) {
-				step.classList.add('step-active');
-			}
-		});
-	}
-
-	// Trigger scroll animation on page load and scroll
-	window.addEventListener('scroll', checkScroll);
-	checkScroll();
-});
-
 /* Menu Toggle */
 document.addEventListener('DOMContentLoaded', () => {
 	const mobileMenuToggle = document.querySelector('.mobile-menu');
@@ -147,3 +127,64 @@ document
 			event.preventDefault(); // Prevent the form from submitting
 		}
 	});
+
+	
+
+// Scroll animation for steps
+/* document.addEventListener('DOMContentLoaded', function () {
+	const steps = document.querySelectorAll('.step');
+
+	function checkScroll() {
+		steps.forEach((step) => {
+			const stepPosition = step.getBoundingClientRect().top;
+			const windowHeight = window.innerHeight;
+
+			if (stepPosition < windowHeight - 100) {
+				step.classList.add('step-active');
+			}
+		});
+	}
+
+	// Trigger scroll animation on page load and scroll
+	window.addEventListener('scroll', checkScroll);
+	checkScroll();
+}); */
+
+
+
+	// Dynamically apply the data-aos attribute for :nth-child(even) & nth-child(odd) elements
+	document.querySelectorAll('.step').forEach((element, index) => {
+		if ((index + 1) % 2 === 0) {
+			// For even elements
+			element.setAttribute('data-aos', 'fade-right');
+			element.setAttribute('data-aos-delay', '200');
+		} else {
+			// For odd elements
+			element.setAttribute('data-aos', 'fade-left');
+			element.setAttribute('data-aos-delay', '300');
+		}
+	});
+
+	document.querySelectorAll('.contact-details').forEach((element) => {
+		element.setAttribute('data-aos', 'zoom-in');
+		element.setAttribute('data-aos-delay', '200');
+	});
+	
+	// Dynamically apply the data-aos attribute for :nth-child(even) & nth-child(odd) elements
+	/* document.querySelectorAll('.contact-details').forEach((element) => {
+		element.setAttribute('data-aos', 'fade-left');
+		element.setAttribute('data-aos-delay', '200');
+	});
+	/* document.querySelectorAll('.step:nth-child(even)').forEach((element) => {
+		element.setAttribute('data-aos', 'fade-left');
+		element.setAttribute('data-aos-delay', '200');
+	});
+	document.querySelectorAll('.step:nth-child(odd)').forEach((element) => {
+		element.setAttribute('data-aos', 'fade-right');
+		element.setAttribute('data-aos-delay', '300');
+	}); */
+
+	// Initialize AOS (Animate On Scroll) library// AOS Instance
+    AOS.init();
+
+	
