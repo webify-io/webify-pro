@@ -518,13 +518,13 @@ body.dark-mode .main .about h2 {
 	font-weight: bolder;
 	color: #fff; /* Inner fill color */	
       text-shadow:        
-        0 0 3px var(--first-color),        
-        0 0 3px var(--first-color),        
-        0 0 3px var(--first-color),        
-        0 0 3px var(--first-color),        
-        0 0 3px var(--first-color),        
-        0 0 3px var(--first-color);
-		filter: blur(.2px); /* Softens the edges further */
+        0 0 5px var(--first-color),        
+        0 0 5px var(--first-color),        
+        0 0 5px var(--first-color),        
+        0 0 5px var(--first-color),        
+        0 0 5px var(--first-color),        
+        0 0 5px var(--first-color);
+		/* filter: blur(.2px);  *//* Softens the edges further */
 }
 
 /* Navigation Menu Styling */
@@ -1869,8 +1869,8 @@ body.dark-mode .main .about h2 {
 	background: rgba(255, 255, 255, .8);
 	border-radius: 8px;
 	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-	/* opacity: 0;
-	visibility: hidden; */
+	opacity: 0;
+	visibility: hidden;
 	transition: all .8s ease-in-out;
 	position: relative;
 }
@@ -1879,7 +1879,7 @@ body.dark-mode .main .about h2 {
 	box-shadow: 0 6px 10px 4px rgba(60, 64, 67, .15), 0 2px 3px 0 rgba(60, 64, 67, .3);	
 }
 
-/* .step:nth-child(even) {
+.step:nth-child(even) {
 	flex-direction: row-reverse;
 	visibility: hidden;
 }
@@ -1891,7 +1891,7 @@ body.dark-mode .main .about h2 {
 .step-active:nth-child(even) {
 	visibility: visible;
 }
- */
+
 /* Step Image */
 .step-image {
 	flex: 1;
@@ -2079,9 +2079,13 @@ hr {
 		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 		margin-right: 2rem;
 	}
+	.nav__item a {
+		display: block;
+		text-overflow: ellipsis; /* Add ellipses for truncated text */
+	}
 
 	.nav__link {
-		/* font-size: 1.25rem; */
+		font-size: 1.025rem;
 		text-decoration: none;
 		color: #000;
 	}
@@ -2121,11 +2125,14 @@ hr {
 	}
 
 	.nav__submenu-item a {
+		display: block;
 		padding: 10px 0;
 		margin-left: 20px;
 		color: #000;
 		font-size: 1rem;
 		white-space: pre;
+		overflow: hidden; /* Hide overflowing text */
+		text-overflow: ellipsis; /* Add ellipses for truncated text */
 	}
 
 	.cta__button {
@@ -2161,10 +2168,13 @@ hr {
 	.about {
 		padding: 3.75rem 1.25rem;
 	}
-
-	.about-image {
-		display: none;
+	.about-content {
+		flex-direction: column-reverse;
 	}
+
+	/* .about-image {
+		display: none;
+	} */
 
 	/* Services Section */
 	.service-card {

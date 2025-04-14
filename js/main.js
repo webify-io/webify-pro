@@ -131,7 +131,7 @@ document
 	
 
 // Scroll animation for steps
-/* document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
 	const steps = document.querySelectorAll('.step');
 
 	function checkScroll() {
@@ -148,12 +148,12 @@ document
 	// Trigger scroll animation on page load and scroll
 	window.addEventListener('scroll', checkScroll);
 	checkScroll();
-}); */
+});
 
 
 
 	// Dynamically apply the data-aos attribute for :nth-child(even) & nth-child(odd) elements
-	document.querySelectorAll('.step').forEach((element, index) => {
+	/* document.querySelectorAll('.step').forEach((element, index) => {
 		if ((index + 1) % 2 === 0) {
 			// For even elements
 			element.setAttribute('data-aos', 'fade-right');
@@ -163,18 +163,9 @@ document
 			element.setAttribute('data-aos', 'fade-left');
 			element.setAttribute('data-aos-delay', '300');
 		}
-	});
-
-	document.querySelectorAll('.contact-details').forEach((element) => {
-		element.setAttribute('data-aos', 'zoom-in');
-		element.setAttribute('data-aos-delay', '200');
-	});
+	}); */
 	
 	// Dynamically apply the data-aos attribute for :nth-child(even) & nth-child(odd) elements
-	/* document.querySelectorAll('.contact-details').forEach((element) => {
-		element.setAttribute('data-aos', 'fade-left');
-		element.setAttribute('data-aos-delay', '200');
-	});
 	/* document.querySelectorAll('.step:nth-child(even)').forEach((element) => {
 		element.setAttribute('data-aos', 'fade-left');
 		element.setAttribute('data-aos-delay', '200');
