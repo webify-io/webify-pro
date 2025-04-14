@@ -20,7 +20,7 @@
 	--clr-background: #fff; /* Light background */
 	--clr-background-alt: #f6f9fc;
 	--clr-background-header: #fff;
-	--clr-background-footer:  rgba(1, 1, 1, 0.035);
+	--clr-background-footer:  rgba(1, 1, 1, 0.02);
 	--clr-background-cards: #fff;
 	/* --clr-background: #f8f8ff;  */
 	/* --clr-background-alt: rgba(247, 245, 250, 1);  */
@@ -518,13 +518,13 @@ body.dark-mode .main .about h2 {
 	font-weight: bolder;
 	color: #fff; /* Inner fill color */	
       text-shadow:        
-        0 0 5px var(--first-color),        
-        0 0 5px var(--first-color),        
-        0 0 5px var(--first-color),        
-        0 0 5px var(--first-color),        
-        0 0 5px var(--first-color),        
-        0 0 5px var(--first-color);
-		/* filter: blur(.2px);  *//* Softens the edges further */
+        0 0 4px var(--first-color),        
+        0 0 3px var(--text-dark-blue),        
+        0 0 3px var(--first-color),        
+        0 0 3px var(--text-dark-blue),        
+        0 0 3px var(--first-color),        
+        0 0 3px var(--text-dark-blue);
+		/* filter: blur(.1px);  *//* Softens the edges further */
 }
 
 /* Navigation Menu Styling */
@@ -1148,7 +1148,7 @@ body.dark-mode .main .about h2 {
 	margin-bottom: 20px;
 }
 
-.read-more {
+/* .read-more {
 	display: inline-block;
 	background-color: var(--first-color);
 	color: #fff;
@@ -1160,9 +1160,9 @@ body.dark-mode .main .about h2 {
 }
 
 .read-more:hover {
-	background-color: #008cff; /* Darker blue on hover */
+	background-color: #008cff;
 }
-
+ */
 /* Contact Section */
 .contact {
 	padding: 3.75rem 1rem;
@@ -1854,7 +1854,7 @@ body.dark-mode .main .about h2 {
 }
 
 .steps-container {
-	width: 90%;
+	width: 70%;
 	margin: 0 auto;
 	max-width: 1200px;
 }
@@ -1871,7 +1871,7 @@ body.dark-mode .main .about h2 {
 	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 	opacity: 0;
 	visibility: hidden;
-	transition: all .8s ease-in-out;
+	transition: all .5s ease;
 	position: relative;
 }
 .step:hover {	
@@ -2085,7 +2085,7 @@ hr {
 	}
 
 	.nav__link {
-		font-size: 1.025rem;
+		font-size: 1.035rem;
 		text-decoration: none;
 		color: #000;
 	}
