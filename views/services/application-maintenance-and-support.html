@@ -1,70 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- SEO - meta<tags> for search engine optimisation -->
-    <!-- Additional Meta Tags -->
-    <meta name="robots" content="index, follow" />
-
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Application Maintenance & Suport - Webify</title>
-    <!-- Primary Meta Tags -->
-    <meta
-      name="description"
-      content="Our goal is to deliver a seamless user experience and maintain peak performance, so your application always runs like a well-oiled machine."
-    />
+    <!-- SEO - meta<tags> for serach engine optimisation -->
     <!-- Keywords Meta Tag -->
     <meta
       name="keywords"
-      content="Webify, webify, web, webify web solutions, webify solutions, web solutions, software, tech, technology, software development, mobile development, seo, search engine optimization, web development johannesburg, web development south africa, cheap websites, affordable websites, easy websites, simple websites, web development, website design, e-commerce solutions, custom web applications, user experience design, responsive web design, webify, digital transformation, business website, web development company, Website Optimization, website Consultation, API Development, Backend Development, UI/UX Design"
+      content="webify, web, webify web solutions, webify solutions, web solutions, software, tech, technology, software development, mobile development, seo, search engine optimization, SEO Integration & Web Design, web development johannesburg, web development south africa, cheap websites, affordable websites, easy websites, simple websites, web development, website design, e-commerce solutions, custom web applications, user experience design, responsive web design, webify, digital transformation, business website, web development company, Website Optimization, website Consultation, API Development, Backend Development, UI/UX Design"
     />
+    <!-- Primary Meta Tags -->
+    <meta
+      name="description"
+      content="Webify offers cutting-edge web development services to transform your business presence online. Specializing in custom websites, e-commerce solutions, and user-friendly designs."
+    />
+    <!-- Additional Meta Tags -->
+    <meta name="robots" content="index, follow" />
+    <!-- Open Graph Tags - Social Media -->
+    <meta
+      name="og:Webify"
+      property="og:Webify"
+      content="Webify Web Solutions (Pty) Ltd"
+    />
+    <meta
+      property="og:title"
+      content="Webify - Innovative Web Development Solutions"
+    />
+    <meta
+      property="og:description"
+      content="Webify offers cutting-edge web development services to transform your business presence online."
+    />
+    <meta property="og:image" content="/assets/favicon/favicon-96x96.png" />
+    <meta property="og:url" content="https://webify.org.za/" />
+    <!-- Open Graph: Twitter Card Tags -->
+    <meta name="twitter:card" content="Webify Web Solutions (Pty) Ltd" />
 
+    <!-- Apple: Set the title for the web app on Home Screen -->
+    <meta name="apple-mobile-web-app-title" content="Webify" />
+    <!-- Apple: Optimize the web app for standalone, full-screen mode -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- Apple: Set the background color for the splash screen -->
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <!-- Favicon Icons - Branding in tabs and Bookmarks -->
+    <meta name="msapplication-TileColor" content="#fff" />
+    <meta name="theme-color" content="#fff" />
+
+    <title>Application Maintanance & Support - Webify</title>
+
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="https://webify.org.za/" />
     <!-- Favicon Icons [Branding in tabs]  -->
-    <!-- Standard favicon - For modern browsers -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <!-- For modern browsers -->
+    <link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico" />
     <!-- For IE 10 and below -->
-    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
     <!-- For PNG favicons -->
     <link
       rel="icon"
       sizes="any"
       type="image/png"
-      href="/web-app-manifest-192x192.png"
+      href="/assets/favicon/web-app-manifest-192x192.png"
     />
-    <!-- For iOS - 180x180px -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="Webify" />
+    <!-- For Apple - 180x180px -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicon/apple-touch-icon.png"
+    />
     <!-- SVG favicon -->
-    <link rel="icon" type="image/svg+xml" href="/favicon.ico/favicon.svg" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/assets/favicon/favicon.ico/favicon.svg"
+    />
     <!-- 32x32 and 16x16 pixel icons for general use -->
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon/favicon-16x16.png"
+    />
     <!-- 96x96 pixel icon -->
     <link
       rel="icon"
       type="image/png"
-      href="/favicon.ico/favicon-96x96.png"
+      href="/assets/favicon/favicon-96x96.png"
       sizes="96x96"
     />
     <!-- Web App Manifest -->
-    <link rel="manifest" href="/site.webmanifest" />
-    <!-- Favicon Icons - Branding in tabs and Bookmarks -->
-    <meta name="msapplication-TileColor" content="#ffc40d" />
-    <meta name="theme-color" content="#5bbad5" />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
 
     <!-- Link Swiper's CSS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-
     <!-- boxicons stylesheet for icons-->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-
+    <!-- ------------ AOS Library ------------------------- -->
+    <link
+      rel="stylesheet"
+      href="	https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
     <!-- Link to external CSS -->
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
@@ -365,7 +416,11 @@
           <div class="container">
             <h2>Contact Us</h2>
             <div class="contact-info">
-              <div class="contact-details">
+              <div
+                class="contact-details"
+                data-aos="zoom-in"
+                data-aos-duration="500"
+              >
                 <h3>Get in Touch</h3>
                 <br />
                 <p>
@@ -524,6 +579,9 @@
         </div>
       </div>
     </div>
+
+    <!-- Adding AOS[Animate On Scroll] JS Library to Project -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
     <!-- custom js file link -->
     <script src="/js/main.js"></script>

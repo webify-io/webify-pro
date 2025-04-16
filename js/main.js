@@ -1,4 +1,10 @@
-// Get the button element
+document.addEventListener('DOMContentLoaded', () => {
+    AOS.init();
+});
+
+
+/* Scroll to Top Button */
+// Get the scrollToTopBtn element
 const scrollToTopBtn = document.getElementById('scrollToTopBtn');
 
 // Show or hide the button based on scroll position
@@ -174,8 +180,5 @@ document.addEventListener('DOMContentLoaded', function () {
 		element.setAttribute('data-aos', 'fade-right');
 		element.setAttribute('data-aos-delay', '300');
 	}); */
-
-	// Initialize AOS (Animate On Scroll) library// AOS Instance
-    AOS.init();
 
 	
