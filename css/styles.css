@@ -371,6 +371,9 @@ body.dark-mode .double-outline{
 body.dark-mode .tech-img {
 	background: #e2e8f0; /* color-neutral-200 */
 }
+body.dark-mode .tech-img img {
+	filter: grayscale(100%) brightness(90%) invert(1);
+}
 
 body.dark-mode h1,
 body.dark-mode h2,
@@ -933,7 +936,7 @@ body.dark-mode .main .about h2 {
 	width: 3.5em;
 	height: 3.5em;
 	object-fit: scale-down;
-	filter: grayscale(100%) brightness(100%) invert(1);
+	/* filter: grayscale(100%) brightness(100%) invert(1); */
 }
 
 
