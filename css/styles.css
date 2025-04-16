@@ -319,6 +319,10 @@ body.dark-mode .nav__submenu-item a:hover {
 	color: #fff;
 }
 
+body.dark-mode .footer {
+	background-color: var(--bg-dark-gray) ;
+}
+
 body.dark-mode .loader {
 	background-color: #2d2d2d;
 }
