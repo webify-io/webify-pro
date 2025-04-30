@@ -180,7 +180,6 @@ h3 {
 	font-size: 1em;
 	font-family: var(--Lexend), var(--Instrument), var(--Inter);
 	/* font-weight: bold;
-	text-decoration: none; */
 	transition: background-color 0.3s ease, color 0.3s ease;
 	border: none;
 }
@@ -518,7 +517,6 @@ body.dark-mode .main .about h2 {
 	letter-spacing: -.02rem;
 	color: var(--text-gray);
 	user-select: none;
-	/* text-decoration: none; */
 }
 
   
@@ -1165,7 +1163,6 @@ body.dark-mode .main .about h2 {
 	padding: 11px 24px;
 	border-radius: 48px;
 	font-size: 1em;
-	text-decoration: none;
 	transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -1220,7 +1217,6 @@ body.dark-mode .main .about h2 {
 
 .contact-details a {
 	color: var(--first-color);
-	text-decoration: none;
 }
 
 .contact-details a:hover {
@@ -1684,7 +1680,6 @@ body.dark-mode .main .about h2 {
 
 .terms a {
 	color: var(--first-color);
-	text-decoration: none;
 }
 
 .terms a:hover {
@@ -1713,7 +1708,6 @@ body.dark-mode .main .about h2 {
 
 .privacy-policy a {
 	color: var(--first-color);
-	text-decoration: none;
 }
 
 .privacy-policy a:hover {
@@ -1999,7 +1993,6 @@ body.dark-mode .main .about h2 {
 }
 .social-buttons a:hover {
 	background-color: #008cff; /* Change color on hover */
-	text-decoration: none;
 }
 
 hr {
@@ -2100,7 +2093,7 @@ hr {
 
 	.nav__link {
 		font-size: 1.035rem;
-		text-decoration: none;
+		letter-spacing: -.01rem;
 		color: #000;
 	}
 
