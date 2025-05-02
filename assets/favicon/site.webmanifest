@@ -1,5 +1,5 @@
 {
-  "name": "Webify Web Solutions",
+  "name": "Webify",
   "short_name": "Webify",
   "icons": [
     {
@@ -15,7 +15,7 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#00a8ff",
+  "theme_color": "#1a73e8",
   "background_color": "#ffffff",
   "display": "standalone"
 }
