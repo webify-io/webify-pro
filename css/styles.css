@@ -15,6 +15,7 @@
 	--text-dark-blue: #1a73e8;
 
 	--first-color: rgba(0, 168, 255, 1); /* Blue: #00a8ff */
+	--second-color: #0066EE; 
 
 	--bg-dark-gray: #333;
 	--clr-background: #fff; /* Light background */
@@ -69,8 +70,9 @@ body {
 	font-family: var(--Lexend), var(--Roboto), sans-serif;
 	background-color: var(--clr-background); /* Light background */
 	color: var(--text-gray); /* Dark grey text */
-	overflow-x: hidden;
-	-webkit-font-smoothing: antialiased;
+	overflow-x: hidden;	
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 	transition: background-color 0.3s, color 0.3s;
 }
 a{
@@ -180,13 +182,16 @@ h3 {
 	font-size: 1em;
 	font-family: var(--Lexend), var(--Instrument), var(--Inter);
 	font-weight: bold;
-	transition: all 0.2s ease;
+    letter-spacing: 0.1px;
+	line-height: 1.4;
+	transition: all 0.2s ease-in-out;
 	border: none;
 }
 
 .cta-btn:hover {
 	background-color: #008cff; /* Darker blue on hover */
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+	transform: scale(1.05);
 }
 
 .cta-btn-card {
@@ -212,7 +217,7 @@ h3 {
 
 .eyebrow {
 	display: block;
-	color: var(--text-dark-blue);
+	color: var(--first-color);
 	max-width: 100%;
     white-space: normal;
 	font-size: 14px;
@@ -623,7 +628,7 @@ body.dark-mode .main .about h2 {
 	background-color: var(--text-gray);
 	color: #fff;
 	padding: 13px 24px 11px;
-	border-radius: 4px;
+	border-radius: 8px;
 	font-family: var(--Instrument),var(--Livvic);
 	font-weight: 300;
 	letter-spacing: -0.2px;
@@ -631,7 +636,8 @@ body.dark-mode .main .about h2 {
 }
 
 .cta__button:hover {
-	background-color: rgba(117, 117, 117, 0.8); /* 50% opacity */
+	/* background-color: rgba(117, 117, 117, 0.8); */ /* 50% opacity */
+	background-color: var(--second-color); /* 50% opacity */
 }
 
 /* Mobile Menu Styling */
@@ -1411,7 +1417,7 @@ body.dark-mode .main .about h2 {
 	color: #fff; 
 	border: none;
 	padding: 13px 24px 11px;
-	border-radius: 4px;
+	border-radius: 8px;
 	/* border-radius: 30px;
 	padding: 15px 25px; */
 	font-size: 1em;
