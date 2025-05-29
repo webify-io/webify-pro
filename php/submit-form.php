@@ -28,7 +28,7 @@ if (mail($recipient, $subject, $message, $mailheader)) {
     mail($email, $user_subject, $user_message, $user_mailheader);
 
     // Redirect to success page
-    header("Location: /html/success.html");
+    header("Location: /views/success.html");
     exit();
 } else {
     // Log error to file and show generic message
