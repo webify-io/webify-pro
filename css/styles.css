@@ -679,13 +679,26 @@ body.dark-mode .main .about h2 {
 		#0d1a33
 	); */
 	background: var(--sky);
-	background-size: 150% 150%;
+	background-size: 200% 200%;
 	/* z-index: -1; */  /* Ensure background layering  */
-	animation: colorChange 20s linear infinite;
+	animation: colorChange 20s ease-in-out infinite;
 	overflow: hidden;
 }
 
 @keyframes colorChange {
+	0% {
+		background-position: 0 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0 50%;
+	}
+}
+/* @keyframes colorChange {
     0% {
         background-position: 0% 50%;
     }
@@ -701,16 +714,16 @@ body.dark-mode .main .about h2 {
     100% {
         background-position: 0% 50%;
     }
-}
+} */
 
 .hero-rings-image{
     position: absolute;
     top: 50%; /* Centering */
     left: 70%; /* Centering */
     transform: translate(-50%, -50%);
-    height: 170%;
+    height: 200%;
     opacity: 0.4;
-    animation: pulsate 45s ease-in-out infinite; 
+    /* animation: pulsate 45s ease-in-out infinite;  */
     mix-blend-mode: hard-light;
 }
 
@@ -718,17 +731,17 @@ body.dark-mode .main .about h2 {
     mix-blend-mode: hard-light;
 } */
 
-@keyframes pulsate {
+/* @keyframes pulsate {
     0% {
         transform: translate(-50%, -50%) scale(1);
     }
     50% {
-        transform: translate(-50%, -50%) scale(1.2); /* Expands slightly */
+        transform: translate(-50%, -50%) scale(1.2); 
     }
     100% {
-        transform: translate(-50%, -50%) scale(1); /* Returns to original size */
+        transform: translate(-50%, -50%) scale(1);
     }
-}
+} */
 
 .hero .overlay {
     position: relative; /* Keep it above */
@@ -888,10 +901,11 @@ body.dark-mode .main .about h2 {
 	border: 1px solid #dadce0;
 	border-radius: 8px;
 	width: 90%;
+	/* box-shadow: 0px 5px 20px rgba(12, 12, 26, 0.15); */
 	/* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);  *//* Soft shadow */	
 	/* margin: 3rem auto; */
 	/* box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); */
-	transition: all 0.3s ease;
+	transition: all 0.2s ease-in-out;
 	user-select: none;
 }
 
@@ -1897,8 +1911,12 @@ body.dark-mode .main .about h2 {
 	padding: 5rem 1.25rem 2rem;
 }
 
-.development-steps h2,
-.step-content-span{
+.development-steps h2 {
+	color: var(--first-color);
+}
+
+.step-content-span {
+	padding-right: 0.5rem;
 	color: var(--first-color);
 }
 
@@ -1961,13 +1979,19 @@ body.dark-mode .main .about h2 {
 
 .step-content h3 {
 	display: flex;
-	justify-content: space-between;
 	font-size: 1.375em;
 	color: var(--text-dark-gray);
 	margin-bottom: 10px;
 }
 
+.step-button-box-container {
+	display: flex;	
+	justify-content: space-between;
+	align-items: center;
+}
+
 .step-button-box {
+	user-select: none;
     position:relative;
     /* width: 100px;
     height: 45px;
@@ -1975,7 +1999,7 @@ body.dark-mode .main .about h2 {
 	font-size: .8rem;
 	padding: .5rem 1rem;
 	color: #fff;
-    border-radius: 10px;
+    border-radius: 8px;
     background: var(--tech-gradient);
     background-size: 200%;
     animation: animationGradient 2.5s linear infinite;
@@ -2057,12 +2081,12 @@ body.dark-mode .main .about h2 {
 	width: 50px;
 	height: 50px;
 	font-size: 2em;
+	padding: 12px;
 	transition: background-color 0.3s ease;
 }
 .social-buttons a:hover {
 	background-color: #008cff; /* Change color on hover */
 }
-
 hr {
 	border: none;
 	height: 2px;
@@ -2235,20 +2259,10 @@ hr {
 		padding: 0 40px;
 	}
 	.hero-rings-image{
-    	left: 100%; /* Centering */
+    	/* left: 100%;  *//* Centering */
     	height: auto;
+		transform: scale(1.8);
 	}
-	@keyframes pulsate {
-    0% {
-        transform: translate(-50%, -50%) scale(1);
-    }
-    50% {
-        transform: translate(-50%, -50%) scale(2); /* Expands more on smaller screen */
-    }
-    100% {
-        transform: translate(-50%, -50%) scale(1); /* Returns to original size */
-    }
-}
 
 	/* About Section */
 	/* .about .container {
