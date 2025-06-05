@@ -720,8 +720,14 @@
 					disableOnInteraction: true,
 				}, */
         pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
+            el: ".swiper-pagination",
+            clickable: true,
+            renderBullet: function (index, className) {
+                if (index < 3) {  // Limits pagination dots to 3
+                    return '<span class="' + className + '"></span>';
+                }
+                return ''; // Hide extra pagination  dots
+            }
         },
         navigation: {
           nextEl: ".swiper-button-next",
