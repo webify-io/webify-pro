@@ -182,7 +182,7 @@ h3 {
 	text-align: center;
 	font-size: 1em;
 	font-family: var(--Lexend), var(--Instrument), var(--Inter);
-	font-weight: bold;
+	/* font-weight: bold; */
     letter-spacing: 0.1px;
 	line-height: 1.4;
 	transition: all 0.2s ease-in-out;
@@ -722,7 +722,6 @@ body.dark-mode .main .about h2 {
     left: 70%; /* Centering */
     transform: translate(-50%, -50%);
     height: 200%;
-    opacity: 0.4;
     /* animation: pulsate 45s ease-in-out infinite;  */
 	/* animation: fadeEffect 3s infinite alternate; */
 	/* animation: colorShift 20s infinite ease-in-out; */
@@ -731,9 +730,9 @@ body.dark-mode .main .about h2 {
 }
 
 @keyframes fadeColor {
-    0% { opacity: 0.2; filter: hue-rotate(0deg); }
-    50% { opacity: 0.6; filter: hue-rotate(45deg); }
-    100% { opacity: 0.2; filter: hue-rotate(0deg); }
+    0% { opacity: 0; filter: hue-rotate(0deg); }
+    50% { opacity: 0.35; filter: hue-rotate(45deg); }
+    100% { opacity: 0; filter: hue-rotate(0deg); }
 }
 
 /* @keyframes colorShift {
@@ -899,7 +898,7 @@ body.dark-mode .main .about h2 {
 	/* background-attachment: fixed; */
     /* height: 100vh; */
     width: 100%;
-    background-size: 55%;
+    background-size: 59%;
 }
 
 .services h2 {	
@@ -2289,7 +2288,6 @@ hr {
 		transform: scale(1.85);
 		/* mix-blend-mode: exclusion; */
 		opacity: 0.15;
-		animation: none;
 	}
 
 	/* About Section */
@@ -2466,6 +2464,10 @@ hr {
 }
 
 @media (max-width: 412px) {
+	/* global button class */
+.cta-btn {
+	font-weight: bold;
+}
 	.container {
 		padding: 0.75rem 0 0;
 	}
