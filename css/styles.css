@@ -663,7 +663,7 @@ body.dark-mode .main .about h2 {
     color: #fff;
     height: 100vh;
     width: 100%;
-    background: var(--sky);
+    background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 30%, #a1c4fd 50%);
     background-size: 250% 250%;
     animation: gradientShift 25s ease-in-out 1 forwards;
     overflow: hidden;
@@ -692,10 +692,6 @@ body.dark-mode .main .about h2 {
 	line-height: 48px;
 	max-width: 862px;
 	margin-bottom: 34px;
-	/* font-size: 3em;
-	font-weight: bold;
-	margin-bottom: 20px;
-	line-height: 1.2; */
 }
 
 .hero-content p {

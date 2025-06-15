@@ -106,17 +106,22 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <!-- boxicons stylesheet for icons-->
+    <!-- ------------ Boxicons ------------ -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <!-- ------------ AOS Library ------------------------- -->
+
+    <!-- ---------- AOS CSS Library  ------------ -->
     <link
       rel="stylesheet"
-      href="	https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-    <!-- Link to external CSS -->
+   
+    <!-- ------------ Custom CSS ------------ -->
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
 
@@ -258,7 +263,6 @@
     <main>
       <!-- Hero Section -->
       <section class="hero">
-          <!-- <img class="hero-rings-image" src="assets/home/hero-rings-bg.png" alt=""> -->
           
         <div class="overlay">
           <div class="hero-content" 
@@ -278,7 +282,6 @@
 
       <!-- About Section -->
       <section id="about" class="about">
-        <!-- <img class="hero-rings-image" src="assets/home/hero-rings-bg.png" alt=""> -->
 
         <div class="container">
           <div class="about-content" data-aos="fade-up" 
@@ -711,7 +714,7 @@
                   Learn about the latest SEO techniques and best practices to
                   boost your website's visibility and ranking.
                 </p>
-                <a href="https://blogquest.vercel.app/blog/684d7bbd78a8277c17b825ff" class="cta-btn-card">Read More</a>
+                <a href="https://blogquest.vercel.app/blog/684e8cca4b0291981d141ec6" class="cta-btn-card">Read More</a>
               </div>
             </div>
           </div>
@@ -756,7 +759,11 @@
                 </li>
               </ul>
             </div>
-            <div class="contact-form">
+            <div class="contact-form" 
+              data-aos="fade-up" 
+              data-aos-delay="40" 
+              data-aos-duration="700" 
+              data-aos-easing="ease-in-out">
               <h3>Send Us a Message</h3>
               <form action="/php/submit-form.php" method="POST">
                 <!-- Honeypot -->
@@ -955,10 +962,15 @@
       });
     </script>
 
-    <!-- Adding AOS[Animate On Scroll] JS Library to Project -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- ---------- AOS js Library  ------------ -->
+    <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" 
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"
+    ></script>
 
-    <!-- custom js file link -->
+    <!-- --------- custom js file link --------- -->
     <script src="/js/main.js"></script>
     <script src="/js/todayDate.js"></script>
 
